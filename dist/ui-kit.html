@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<style>
+			.ui {
+				margin-top: 100px;
+				display: block;
+			}
+			
+			.ui_sections {
+				padding: 25px 50px;
+				border-top: 2px solid #000;
+				background-color: #39b54a;
+			}
+			
+			.ui_sections-title {
+				padding-bottom: 20px;
+				font-size: 30px;
+				font-weight: bold;
+				text-align: center;
+			}
+			
+			.ui_sections-item {
+				margin-bottom: 10px;
+				padding: 20px 10px;
+				font-size: 0;
+				background-color: #fff;
+				border-radius: 10px;
+			}
+			
+			.ui_sections-item button {
+				vertical-align: bottom;
+			}
+		</style>
+		<title>Regions :: Ui-kit</title>
+		<link href="assets/styles/common.css" rel="stylesheet">
+		<link href="assets/styles/swiper.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="main">
+			<div class="header wrapper">
+				<div class="header__login">
+					<div class="header__login-enter">
+						<button type="button" class="button-txt button-txt_type_icon button-txt_type_icon-enter">Войти</button>
+					</div>
+					<div class="header__login-reg">
+						<button type="button" class="button-txt button-txt_color_green button-txt_type_icon button-txt_type_icon-square">Регистрация</button>
+					</div>
+				</div>
+				<a href="javascript:void(0);" class="header__logo"></a>
+			</div>
+			<div class="ui">
+				<div class="ui_sections">
+					<div class="ui_sections-title">Кнопки</div>
+					<div class="ui_sections-item">
+						<button type="button" class="button">.button</button>
+						<button type="button" class="button button_color_red">_color_red</button>
+						<button type="button" class="button button_color_green">_color_green</button>
+						<button type="button" class="button button_color_orange">_color_orange</button>
+					</div>
+					<div class="ui_sections-item">
+						<button type="button" class="button button_size_big">_size_big</button>
+						<button type="button" class="button button_size_medium">_size_medium</button>
+						<button type="button" class="button button_size_small">_size_small</button>
+					</div>
+					<div class="ui_sections-item">
+						<div style="width: 500px" class="ui_sections-container">
+							<button type="button" class="button button_width_100p">_width_100p растягивется по ширине контейнера</button>
+						</div>
+					</div>
+					<div class="ui_sections-item">
+						<button type="button" class="button button_type_add"></button>
+						<button type="button" class="button button_color_green button_type_icon button_type_icon-home"></button>
+						<button type="button" class="button button_color_green button_type_icon button_type_icon-price"></button>
+						<button type="button" class="button button_color_green button_type_icon button_type_icon-add"></button>
+					</div>
+					<div class="ui_sections-item">
+						<button type="button" disabled class="button button_state_disabled">_state_disabled</button>
+					</div>
+					<div class="ui_sections-item">
+						<button type="button" class="button-txt">.button-txt</button>
+						<button type="button" class="button-txt button-txt_type_icon button-txt_type_icon-enter">_type_icon-enter</button>
+						<button type="button" class="button-txt button-txt_type_icon button-txt_type_icon-exit">_type_icon-exit</button>
+						<button type="button" class="button-txt button-txt_color_green button-txt_type_icon button-txt_type_icon-square">_type_icon-square</button>
+					</div>
+				</div>
+				<div class="ui_sections">
+					<div class="ui_sections-title">Объявление</div>
+					<div class="ui_sections-item">
+						<div class="advert">
+							<div role="toolbar" class="advert__sidebar">
+								<div role="img" class="advert__sidebar-billboard"><img src="assets/images/content/advert.jpg" alt="Изображение объекта" class="advert__sidebar-img" /></div>
+								<div class="advert__sidebar-options-btn">
+									<button type="button" class="button button_color_green button_type_icon button_type_icon-home"></button>
+									<button type="button" class="button button_color_green button_type_icon button_type_icon-price"></button>
+									<button type="button" class="button button_color_green button_type_icon button_type_icon-add"></button>
+								</div>
+							</div>
+							<div class="advert__content">
+								<div role="heading" class="advert__content-title">Рекламный щит на «Рублевском шоссе»
+									<div class="advert__content-date"><span>актуально до</span>
+										<time>23.01.2015</time>
+									</div>
+								</div>
+								<p class="advert__content-description">Текст маркетингового предложения короткого, но информативного</p>
+								<div class="advert__content-price"><span>1000</span> <span>р./м2</span></div>
+							</div>
+							<div class="advert__edit-btn"></div>
+						</div>
+						<div class="advert">
+							<div role="toolbar" class="advert__sidebar">
+								<div role="img" class="advert__sidebar-billboard"><img src="assets/images/content/advert.jpg" alt="Изображение объекта" class="advert__sidebar-img" /></div>
+								<div class="advert__sidebar-options-btn">
+									<button type="button" class="button button_color_green button_type_icon button_type_icon-home"></button>
+									<button type="button" class="button button_color_green button_type_icon button_type_icon-price"></button>
+									<button type="button" class="button button_color_green button_type_icon button_type_icon-add"></button>
+								</div>
+								<div class="advert__sidebar-status-btn">
+									<button type="button" class="button button_size_small button_br_5 button_width_100p">на модерации</button>
+								</div>
+							</div>
+							<div class="advert__content">
+								<div role="heading" class="advert__content-title">Рекламный щит на «Рублевском шоссе»
+									<div class="advert__content-date"><span>актуально до</span>
+										<time>23.01.2015</time>
+									</div>
+								</div>
+								<p class="advert__content-description">Текст маркетингового предложения короткого, но информативного</p>
+								<div class="advert__content-price"><span>1000</span> <span>р./м2</span></div>
+							</div>
+							<div class="advert__edit-btn">
+								<button type="button" class="button">Редактировать</button>
+							</div>
+						</div>
+						<div class="advert">
+							<div role="toolbar" class="advert__sidebar">
+								<div role="img" class="advert__sidebar-billboard"><img src="assets/images/content/advert.jpg" alt="Изображение объекта" class="advert__sidebar-img" /></div>
+								<div class="advert__sidebar-options-btn">
+									<button type="button" class="button button_color_green button_type_icon button_type_icon-home"></button>
+									<button type="button" class="button button_color_green button_type_icon button_type_icon-price"></button>
+									<button type="button" class="button button_color_green button_type_icon button_type_icon-add"></button>
+								</div>
+								<div class="advert__sidebar-status-btn">
+									<button type="button" disabled="disabled" class="button button_size_small button_br_5 button_width_100p button_state_disabled">в архиве</button>
+								</div>
+							</div>
+							<div class="advert__content">
+								<div role="heading" class="advert__content-title">Рекламный щит на «Рублевском шоссе»
+									<div class="advert__content-date"><span>актуально до</span>
+										<time>23.01.2015</time>
+									</div>
+								</div>
+								<p class="advert__content-description">Текст маркетингового предложения короткого, но информативного</p>
+								<div class="advert__content-price"><span>1000</span> <span>р./м2</span></div>
+							</div>
+							<div class="advert__edit-btn">
+								<button type="button" class="button">Редактировать</button>
+							</div>
+						</div>
+						<div class="advert">
+							<div role="toolbar" class="advert__sidebar">
+								<div role="img" class="advert__sidebar-billboard"><img src="assets/images/content/advert.jpg" alt="Изображение объекта" class="advert__sidebar-img" /></div>
+								<div class="advert__sidebar-options-btn">
+									<button type="button" class="button button_color_green button_type_icon button_type_icon-home"></button>
+									<button type="button" class="button button_color_green button_type_icon button_type_icon-price"></button>
+									<button type="button" class="button button_color_green button_type_icon button_type_icon-add"></button>
+								</div>
+								<div class="advert__sidebar-status-btn">
+									<button type="button" class="button button_size_small button_br_5 button_width_100p button_color_orange">нет модерации</button>
+								</div>
+							</div>
+							<div class="advert__content">
+								<div role="heading" class="advert__content-title">Рекламный щит на «Рублевском шоссе»
+									<div class="advert__content-date"><span>актуально до</span>
+										<time>23.01.2015</time>
+									</div>
+								</div>
+								<p class="advert__content-description">Текст маркетингового предложения короткого, но информативного</p>
+								<div class="advert__content-price"><span>1000</span> <span>р./м2</span></div>
+							</div>
+							<div class="advert__edit-btn">
+								<button type="button" class="button button_size_medium button_color_red">Отклонить</button>
+								<button type="button" class="button button_size_medium button_color_green">Принять</button>
+								<button type="button" class="button button_size_medium">Редактировать</button>
+							</div>
+						</div>
+						<div class="advert">
+							<div role="toolbar" class="advert__sidebar">
+								<div role="img" class="advert__sidebar-billboard"><img src="assets/images/content/advert.jpg" alt="Изображение объекта" class="advert__sidebar-img" /></div>
+								<div class="advert__sidebar-options-btn">
+									<button type="button" class="button button_color_green button_type_icon button_type_icon-home"></button>
+									<button type="button" class="button button_color_green button_type_icon button_type_icon-price"></button>
+									<button type="button" class="button button_color_green button_type_icon button_type_icon-add"></button>
+								</div>
+							</div>
+							<div class="advert__content">
+								<div role="heading" class="advert__content-title">Рекламный щит на «Рублевском шоссе»
+									<div class="advert__content-date"><span>актуально до</span>
+										<time>23.01.2015</time>
+									</div>
+								</div>
+								<p class="advert__content-description">Текст маркетингового предложения короткого, но информативного</p>
+								<div class="advert__content-price"><span>1000</span> <span>р./м2</span></div>
+							</div>
+							<div class="advert__edit-btn">
+								<button type="button" class="button button_size_medium button_color_red">Отклонить</button>
+								<button type="button" class="button button_size_medium button_color_green">Принять</button>
+								<button type="button" class="button button_size_medium">Редактировать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="assets/scripts/common.min.js"></script>
+	</body>
+
+</html>
