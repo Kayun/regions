@@ -1,0 +1,130 @@
+extends ../layouts/default
+
+block head
+	- pageTitle ='Regions :: Ui-kit';
+	style.
+		.ui {
+			margin-top: 100px;
+			display: block;
+		}
+
+		.ui_sections {
+			padding: 25px 50px;
+			border-top: 2px solid #000;
+			background-color: #39b54a;
+		}
+
+		.ui_sections-title {
+			padding-bottom: 20px;
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		.ui_sections-item {
+			margin-bottom: 10px;
+			padding: 20px 10px;
+			font-size: 0;
+			background-color: #fff;
+			border-radius: 10px;
+		}
+
+		.ui_sections-item button {
+			vertical-align: bottom;
+		}
+
+block content
+	.ui
+		.ui_sections
+			.ui_sections-title Кнопки
+			.ui_sections-item
+
+				button.button(type="button") .button
+				button.button.button_color_red(type="button") _color_red
+				button.button.button_color_green(type="button") _color_green
+				button.button.button_color_orange(type="button") _color_orange
+
+			.ui_sections-item
+				button.button.button_size_big(type="button") _size_big
+				button.button.button_size_medium(type="button") _size_medium
+				button.button.button_size_small(type="button") _size_small
+
+			.ui_sections-item
+				.ui_sections-container(style="width: 500px")
+					button.button.button_width_100p(type="button") _width_100p растягивется по ширине контейнера
+
+			.ui_sections-item
+				button.button.button_type_add(type="button")
+				button.button.button_color_green.button_type_icon.button_type_icon-home(type="button")
+				button.button.button_color_green.button_type_icon.button_type_icon-price(type="button")
+				button.button.button_color_green.button_type_icon.button_type_icon-add(type="button")
+
+			.ui_sections-item
+				button.button.button_state_disabled(type="button" disabled) _state_disabled
+
+			.ui_sections-item
+				button.button-txt(type="button") .button-txt
+				button.button-txt.button-txt_type_icon.button-txt_type_icon-enter(type="button") _type_icon-enter
+				button.button-txt.button-txt_type_icon.button-txt_type_icon-exit(type="button") _type_icon-exit
+				button.button-txt.button-txt_color_green.button-txt_type_icon.button-txt_type_icon-square(type="button") _type_icon-square
+
+		.ui_sections
+			.ui_sections-title Объявление
+			.ui_sections-item
+
+				+advert ({
+					title: "Рекламный щит на «Рублевском шоссе»",
+					date: "23.01.2015",
+					description: "Текст маркетингового предложения короткого, но информативного",
+					price: [1000],
+					billboardImg: "assets/images/content/advert.jpg"
+				})
+
+				+advert ({
+					title: "Рекламный щит на «Рублевском шоссе»",
+					date: "23.01.2015",
+					description: "Текст маркетингового предложения короткого, но информативного",
+					price: [1000],
+					billboardImg: "assets/images/content/advert.jpg",
+					statusBtn: [
+						"button button_size_small button_br_5 button_width_100p",
+						"на модерации"
+					],
+					editBtn: "one"
+				})
+
+				+advert ({
+					title: "Рекламный щит на «Рублевском шоссе»",
+					date: "23.01.2015",
+					description: "Текст маркетингового предложения короткого, но информативного",
+					price: [1000],
+					billboardImg: "assets/images/content/advert.jpg",
+					statusBtn: [
+						"button button_size_small button_br_5 button_width_100p button_state_disabled",
+						"в архиве",
+						"disabled"
+					],
+					editBtn: "one"
+				})
+
+				+advert ({
+					title: "Рекламный щит на «Рублевском шоссе»",
+					date: "23.01.2015",
+					description: "Текст маркетингового предложения короткого, но информативного",
+					price: [1000],
+					billboardImg: "assets/images/content/advert.jpg",
+					statusBtn: [
+						"button button_size_small button_br_5 button_width_100p button_color_orange",
+						"нет модерации",
+					],
+					editBtn: "many"
+				})
+
+				+advert ({
+					title: "Рекламный щит на «Рублевском шоссе»",
+					date: "23.01.2015",
+					description: "Текст маркетингового предложения короткого, но информативного",
+					price: [1000],
+					billboardImg: "assets/images/content/advert.jpg",
+					editBtn: "many"
+				})

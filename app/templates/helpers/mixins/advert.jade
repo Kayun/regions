@@ -1,0 +1,49 @@
+mixin advert(obj)
+	.advert
+		.advert__sidebar(role="toolbar")
+
+			.advert__sidebar-billboard(role="img")
+
+				img.advert__sidebar-img(
+					src=obj.billboardImg
+					alt="Изображение объекта"
+				)
+
+			.advert__sidebar-options-btn
+				button.button.button_color_green.button_type_icon.button_type_icon-home(type="button")
+				button.button.button_color_green.button_type_icon.button_type_icon-price(type="button")
+				button.button.button_color_green.button_type_icon.button_type_icon-add(type="button")
+
+			- if (obj.statusBtn)
+
+				.advert__sidebar-status-btn
+					button(
+						type="button"
+						class=obj.statusBtn[0] ? obj.statusBtn[0] : ""
+						disabled=obj.statusBtn[2] ? obj.statusBtn[2] : false
+					)=obj.statusBtn[1]
+
+		.advert__content
+
+			.advert__content-title(role="heading")=obj.title
+
+				.advert__content-date
+					span актуально до
+					= " "
+					time=obj.date
+
+			p.advert__content-description=obj.description
+
+			.advert__content-price
+				span=obj.price[0]
+				= " "
+				span=obj.price[1] ? obj.price[1] : 'р./м2'
+
+		.advert__edit-btn
+			- if (obj.editBtn == "one")
+				button.button(type="button") Редактировать
+
+			- if (obj.editBtn =="many")
+				button.button.button_size_medium.button_color_red(type="button") Отклонить
+				button.button.button_size_medium.button_color_green(type="button") Принять
+				button.button.button_size_medium(type="button") Редактировать

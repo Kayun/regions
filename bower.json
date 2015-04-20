@@ -1,0 +1,11 @@
+{
+  "name": "csssr-project-template",
+  "version": "0.8.0",
+  "devDependencies": {
+    "jquery": "~2.1.3",
+    "Swiper": "https://github.com/nolimits4web/Swiper.git#~3.0.6"
+  },
+  "resolutions": {
+    "jquery": ">=2.1.3"
+  }
+}

@@ -1,0 +1,107 @@
+.advert
+	position relative
+	margin 0 auto
+	padding 8px 8px 10px
+	width 678px
+	height 150px
+	border-radius 5px
+	border 2px solid transparent
+	transition border-color .3s ease
+
+	&:before
+		position absolute
+		bottom -2px
+		left 8px
+		right 8px
+		height 1px
+		content ''
+		opacity 1
+		background-color #ababab
+		transition opacity .3s ease
+
+	&:last-child
+
+		&:before
+			display none
+
+	&:hover
+		border-color #39b54a
+
+		& .advert__edit-btn
+			opacity 1
+
+		&:before
+			opacity 0
+
+	&__sidebar
+		float left
+		width 115px
+		height 100%
+
+	&__sidebar-billboard
+		margin-bottom 8px
+		width 100%
+		height 70px
+		border-radius 5px
+		overflow hidden
+
+	&__sidebar-img
+		width 100%
+		height 100%
+		display block
+
+	&__sidebar-options-btn
+		margin-bottom 6px
+
+		& .button + .button
+			margin-left 6px
+
+	&__content
+		padding-left 115px
+		width 100%
+		height 100%
+		font-family beausans-r
+		color #000
+
+	&__content-title
+	&__content-description
+	&__content-price
+		display inline-block
+		vertical-align top
+
+	&__content-title
+		height 100%
+		padding 4px 10px 0 13px
+		width 188px
+		font-size 16px
+		letter-spacing .4px
+		line-height 18px
+
+	&__content-date
+		margin-top 16px
+		font-size 10px
+		color #8d8d8d
+
+	&__content-description
+		padding 4px 15px 0 33px
+		width 220px
+		height 90px
+		font-size 13px
+		line-height 15px
+		overflow hidden
+
+	&__content-price
+		padding 2px 17px 0
+		height 90px
+		font-size 16px
+		letter-spacing .4px
+
+	&__edit-btn
+		position absolute
+		right 10px
+		bottom 10px
+		opacity 0
+		transition opacity .3s ease
+
+		& .button + .button
+			margin-left 5px
