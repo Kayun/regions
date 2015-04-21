@@ -3,9 +3,67 @@
 
 	&__text
 		position absolute
+		top 37px
+		left 50%
+		margin-left -128px
 		font-family beausans-thi
 		font-size 27px
 		color #25aae1
+		line-height 28px
+		letter-spacing .6px
+
+		&_weight_bold
+			font-family beausans-bi
+
+		&_color_green
+			color #8dc63f
 
 		& span
 			display inline-block
+
+	&__prev
+	&__next
+		position absolute
+		z-index 10
+		top 265px
+		width 50px
+		height 50px
+		border-top 5px solid #25aae1
+		border-left 5px solid #25aae1
+		cursor pointer
+		transition border-color .3s ease
+
+		&:hover
+			border-color #1e8bba
+
+	&__prev
+		left 228px
+		transform rotate(-45deg)
+
+	&__next
+		right 228px
+		transform rotate(135deg)
+
+	&__pag
+		position absolute
+		z-index 10
+		width 100%
+		text-align center
+		bottom 37px
+		font-size 0
+
+	& .swiper-pagination-bullet
+		width 13px
+		height 13px
+		display inline-block
+		border-radius 3px
+		background-color #fff
+		opacity 1
+		transition background-color .3s ease
+
+		&-active
+		&:hover
+			background-color #94c83d
+
+		& + .swiper-pagination-bullet
+			margin-left 5px
