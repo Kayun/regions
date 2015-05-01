@@ -1,0 +1,43 @@
+.chkb-text
+
+	& + label
+		position relative
+		padding-right 15px
+		display inline-block
+		font-family beausans-th
+		font-size 14px
+		color #25aae1
+		cursor pointer
+		transition color .3s ease
+
+		&:hover
+			color #1e8bba
+
+			&:before
+				border-color #1e8bba
+
+	&:not(checked)
+		position absolute
+		opacity 0
+
+		& + label
+
+			&:before
+				position absolute
+				top 4px
+				right 0
+				width 5px
+				height 5px
+				content ''
+				border-right 1px solid #25aae1
+				border-bottom 1px solid #25aae1
+				transform rotate(45deg)
+				transition all .3s ease
+
+	&:checked
+
+		& + label
+
+			&:before
+				top 7px
+				transform rotate(-135deg)

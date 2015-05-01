@@ -1,3 +1,87 @@
 .best-offers.wrapper
 	.best-offers__banner(role="heading")
 		| Лучшие предложения
+
+	table.best-offers__table
+		thead
+			tr.best-offers__head-row
+				th.best-offers__head-cell.best-offers__head-cell_span_3
+					input.chkb-text(id="check1" type="checkbox" name="title" value="check")
+					label(for="check1") Наименование
+
+				th.best-offers__head-cell
+					| Описание
+
+				th.best-offers__head-cell
+					input.chkb-text(id="check2" type="checkbox" name="company" value="check")
+					label(for="check2") Компания
+
+				th.best-offers__head-cell
+					input.chkb-text(id="check3" type="checkbox" name="price" value="check")
+					label(for="check3") Стоимость
+
+		tbody
+
+			+offerRow({
+				itemImg: "assets/images/content/advert.jpg",
+				title: "Рекламный щит на «Рублевском шоссе»",
+				text: "Тест маркетингового предлжения короткого, но информативного",
+				link: "ООО «Италко»",
+				price: "1000 р./м2"
+			})
+
+			+offerRow({
+				itemImg: "assets/images/content/advert.jpg",
+				title: "Рекламный щит на «Рублевском шоссе»",
+				text: "Тест маркетингового предлжения короткого, но информативного",
+				link: "ООО «Италко»",
+				price: "1000 р./м2"
+			})
+
+			+offerRow({
+				itemImg: "assets/images/content/advert.jpg",
+				title: "Рекламный щит на «Рублевском шоссе»",
+				text: "Тест маркетингового предлжения короткого, но информативного",
+				link: "ООО «Италко»",
+				price: "1000 р./м2"
+			})
+
+			+offerRow({
+				itemImg: "assets/images/content/advert.jpg",
+				title: "Рекламный щит на «Рублевском шоссе»",
+				text: "Тест маркетингового предлжения короткого, но информативного",
+				link: "ООО «Италко»",
+				price: "1000 р./м2"
+			})
+
+			+offerRow({
+				itemImg: "assets/images/content/advert.jpg",
+				title: "Рекламный щит на «Рублевском шоссе»",
+				text: "Тест маркетингового предлжения короткого, но информативного",
+				link: "ООО «Италко»",
+				price: "1000 р./м2"
+			})
+
+			+offerRow({
+				itemImg: "assets/images/content/advert.jpg",
+				title: "Рекламный щит на «Рублевском шоссе»",
+				text: "Тест маркетингового предлжения короткого, но информативного",
+				link: "ООО «Италко»",
+				price: "1000 р./м2"
+			})
+
+			+offerRow({
+				itemImg: "assets/images/content/advert.jpg",
+				title: "Рекламный щит на «Рублевском шоссе»",
+				text: "Тест маркетингового предлжения короткого, но информативного",
+				link: "ООО «Италко»",
+				price: "1000 р./м2"
+			})
+
+			+offerRow({
+				itemImg: "assets/images/content/advert.jpg",
+				title: "Рекламный щит на «Рублевском шоссе»",
+				text: "Тест маркетингового предлжения короткого, но информативного",
+				link: "ООО «Италко»",
+				price: "1000 р./м2"
+			})

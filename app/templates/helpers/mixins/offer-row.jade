@@ -1,0 +1,17 @@
+mixin offerRow(obj)
+	tr.offer-row
+		td
+			.offer-row__img(role="img")
+				img.offer-row__img-inner(
+					src= obj.itemImg
+					alt="Изображение объекта")
+
+			.offer-row__title= obj.title
+
+		td
+			p.offer-row__text= obj.text
+
+		td
+			a.offer-row__link.link(href=jv0)= obj.link
+
+		td.offer-row__price= obj.price
