@@ -10,7 +10,9 @@ paths        = require '../paths'
 gulp.task 'scripts', ->
 	return gulp.src [
 			'libs/jquery/dist/jquery.min.js'
-			'libs/swiper/dist/js/swiper.jquery.min.js'
+			'libs/swiper/dist/js/swiper.jquery.js'
+			'libs/jquery.nicescroll/jquery.nicescroll.js'
+			'libs/ion.tabs/js/ion-tabs/ion.tabs.js'
 			'common.js'
 		],
 			cwd: 'app/scripts'

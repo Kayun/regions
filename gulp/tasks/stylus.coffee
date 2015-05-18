@@ -15,6 +15,7 @@ pkg          = require '../../package.json'
 gulp.task 'stylus', ->
 	return gulp.src ['common.styl'], cwd: 'app/styles'
 		.pipe plumber errorHandler: errorHandler
+		.pipe(stylus({'include css': true}))
 		.pipe stylus errors: true, use: rupture()
 		.pipe autoprefixer(
 			'Android >= ' + pkg.browsers.android

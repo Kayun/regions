@@ -10,6 +10,17 @@
 		cursor pointer
 		transition color .3s ease
 
+		&:before
+			position absolute
+			right 0
+			width 5px
+			height 5px
+			content ''
+			border-right 1px solid #25aae1
+			border-bottom 1px solid #25aae1
+			transform rotate(45deg)
+			transition all .3s ease
+
 		&:hover
 			color #1e8bba
 
@@ -23,16 +34,8 @@
 		& + label
 
 			&:before
-				position absolute
 				top 4px
 				right 0
-				width 5px
-				height 5px
-				content ''
-				border-right 1px solid #25aae1
-				border-bottom 1px solid #25aae1
-				transform rotate(45deg)
-				transition all .3s ease
 
 	&:checked
 
@@ -41,3 +44,39 @@
 			&:before
 				top 7px
 				transform rotate(-135deg)
+
+	&_fs_12
+
+		& + label
+			font-size 12px
+
+	&_color_gray
+
+		& + label
+			color #adadad
+
+			&:before
+				border-color #adadad
+
+			&:hover
+				color #878787
+
+				&:before
+					border-color #878787
+
+	&_arrow_left
+
+		&:not(checked) + label
+			padding-right 0
+			padding-left 15px
+
+			&:before
+				top 0
+				left 0
+				width 6px
+				height 6px
+
+		&:checked + label
+
+			&:before
+				top 4px

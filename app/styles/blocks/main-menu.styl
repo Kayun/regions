@@ -1,0 +1,76 @@
+.main-menu
+	margin-top 10px
+	margin-bottom 10px
+	height 205px
+	width 100%
+	font-size 0
+
+	& .wrapper
+		height 100%
+
+	&__item
+		position relative
+		padding 0 15px
+		height 100%
+		width 127px
+		display inline-block
+		text-align center
+		border 2px solid transparent
+		border-radius 5px
+		transition border-color .3s ease
+
+		&:hover
+			border-color #94c83d
+
+		&:before
+			position absolute
+			z-index 1
+			top 23px
+			left 50%
+			margin-left -33px
+			content ''
+
+		&_icon
+
+			&_tv:before
+				sprite($tv)
+
+			&_billboard:before
+				sprite($billboard)
+
+			&_internet:before
+				sprite($internet)
+
+			&_newspaper:before
+				sprite($newspaper)
+
+			&_radio:before
+				top 13px
+				sprite($radio)
+
+			&_transport:before
+				sprite($transport)
+
+	&__item-link
+		position relative
+		z-index 2
+		margin-top 23px
+		padding-top 62px
+		width 100%
+		display inline-block
+		font-family beausans-li
+		font-size 15px
+		color #1da5de
+		line-height 18px
+		vertical-align top
+		transition color .3s ease
+		text-decoration none
+
+		&:hover
+			color #94c83d
+
+	&__item-count
+		position absolute
+		bottom 27px
+		left 50%
+		margin-left -33px

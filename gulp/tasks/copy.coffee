@@ -25,14 +25,4 @@ gulp.task 'copy:scripts', ->
 		.pipe changed paths.scripts
 		.pipe gulp.dest paths.scripts
 
-gulp.task 'copy:css', ->
-	return gulp.src [
-			'swiper.min.css'
-		],
-			base: 'app/scripts/libs/Swiper/dist/css'
-			cwd: 'app/scripts/libs/Swiper/dist/css'
-		.pipe changed paths.styles
-		.pipe gulp.dest paths.styles
-
-
-gulp.task 'copy', ['copy:images', 'copy:resources', 'copy:scripts', 'copy:css']
+gulp.task 'copy', ['copy:images', 'copy:resources', 'copy:scripts']

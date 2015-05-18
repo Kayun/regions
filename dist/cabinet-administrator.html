@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Regions :: Cabinet</title>
+		<link href="assets/styles/common.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div role="main" class="main">
+			<header role="banner" class="header header_banner">
+				<div class="header__banner">
+					<div class="header__banner-title">Лучшее предложение</div>
+					<div class="header__banner-text">Рекламный блок</div>
+				</div>
+				<div class="wrapper">
+					<div class="header__login">
+						<div class="header__login-name">Василий Табуреткин</div>
+						<div class="header__login-cabinet">
+							<button type="button" class="button-txt button-txt_type_icon button-txt_type_icon-square">Личный кабинет</button>
+						</div>
+						<div class="header__login-exit">
+							<button type="button" class="button-txt button-txt_type_icon button-txt_type_icon-exit">Выйти</button>
+						</div>
+						<div class="header__login-btn">
+							<button type="button" class="button button_size_medium button_width_100p">создать</button>
+						</div>
+					</div>
+					<a href="javascript:void(0);" class="header__logo"></a>
+				</div>
+			</header>
+			<div class="wrapper">
+				<nav class="menu">
+					<ul>
+						<li class="menu__item"><a href="javascript:void(0);" class="menu__link menu__link_lh_26">Телевидение</a></li>
+						<li class="menu__item"><a href="javascript:void(0);" class="menu__link">Наружная реклама</a></li>
+						<li class="menu__item"><a href="javascript:void(0);" class="menu__link menu__link_lh_26">Радио</a></li>
+						<li class="menu__item"><a href="javascript:void(0);" class="menu__link menu__link_lh_26">Пресса</a></li>
+						<li class="menu__item"><a href="javascript:void(0);" class="menu__link">Транзитная реклама</a></li>
+						<li class="menu__item"><a href="javascript:void(0);" class="menu__link">Интернет реклама</a></li>
+					</ul>
+				</nav>
+				<h1 class="title__h1 title__h1_pb_20">Личный кабинет администратора</h1>
+				<div id="tabsCabinetMode" data-name="tabs_cabinet_mode" class="ionTabs">
+					<ul class="tab ionTabs__head">
+						<li data-target="tab_mode_admin" class="tab__item ionTabs__tab">Режим администратора</li>
+						<li data-target="tab_mode_moder" class="tab__item ionTabs__tab">Режим модератора</li>
+					</ul>
+					<div class="ionTabs__body">
+						<div data-name="tab_mode_admin" class="cabinet container container_pt_22 ionTabs__item">
+							<div class="cabinet__header">
+								<div class="cabinet__header-name">Василий Табуреткин</div>
+								<div class="cabinet__header-edit-btn">
+									<button type="button" class="button button_width_100p">Редактировать профиль</button>
+								</div>
+							</div>
+							<h2 class="title__h2 title__h2_pb_12">Список пользователей</h2>
+							<div class="content content_height_415 content_width_440 float-l js-scroll-cont">
+								<table class="cabinet__table">
+									<thead>
+										<tr>
+											<th class="cabinet__table-login">
+												<input id="login" type="checkbox" name="login" value="check" class="chkb-text chkb-text_fs_12 chkb-text_color_gray chkb-text_arrow_left">
+												<label for="login">Логин</label>
+											</th>
+											<th class="cabinet__table-mail">
+												<input id="mail" type="checkbox" name="mail" value="check" class="chkb-text chkb-text_fs_12 chkb-text_color_gray chkb-text_arrow_left">
+												<label for="mail">E-mail</label>
+											</th>
+											<th class="cabinet__table-data">
+												<input id="data" type="checkbox" name="data" value="check" class="chkb-text chkb-text_fs_12 chkb-text_color_gray chkb-text_arrow_left">
+												<label for="data">Дата</label>
+											</th>
+											<th class="cabinet__table-type">
+												<input id="type" type="checkbox" name="type" value="check" class="chkb-text chkb-text_fs_12 chkb-text_color_gray chkb-text_arrow_left">
+												<label for="type">Тип</label>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">администратор</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">модератор</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+										<tr class="cabinet__table-row js-table-row">
+											<td class="cabinet__table-cell">Testatest</td>
+											<td class="cabinet__table-cell">testatest@goo.ru</td>
+											<td class="cabinet__table-cell">11.02.13</td>
+											<td class="cabinet__table-cell">клиент</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="cabinet__add-btn">
+								<button type="button" class="button button_type_add"></button>
+							</div>
+							<div class="content content_height_415 content_width_240 float-r"></div>
+						</div>
+						<div data-name="tab_mode_moder" class="cabinet container ionTabs__item">
+							<div class="cabinet__header">
+								<div class="cabinet__header-name">Иван Табуреткин</div>
+								<div class="cabinet__header-edit-btn">
+									<button type="button" class="button button_width_100p">Редактировать профиль</button>
+								</div>
+							</div>
+						</div>
+						<div class="ionTabs__preloader"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="assets/scripts/common.min.js"></script>
+	</body>
+
+</html>

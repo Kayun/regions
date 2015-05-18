@@ -5,7 +5,7 @@ $(function () {
 	menuCount();
 
 	// слайдер на главной странице
-	//
+
 	var mainSlider;
 
 	mainSlider = new Swiper ('.swiper-container', {
@@ -52,5 +52,32 @@ $(function () {
 			}
 		});
 	}
+
+	// скроллбар
+
+	var $scrollContainer = $('.js-scroll-cont');
+
+	$scrollContainer.each(function () {
+		$(this).niceScroll({
+			cursorcolor: '#39b54a',
+			cursorwidth: '12px',
+			cursorborderradius: '4px',
+			cursorminheight: 86,
+			autohidemode: 'cursor',
+			railoffset: true,
+			railpadding: {
+				top: 20,
+				right: 2,
+				bottom: 20,
+				left: 0
+			}
+		});
+	});
+
+	// табы для личного кабинета
+
+	$.ionTabs('#tabsCabinetMode', {
+		type: 'none'
+	});
 
 });

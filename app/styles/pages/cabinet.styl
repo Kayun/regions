@@ -1,0 +1,89 @@
+.cabinet
+	font-family beausans-l
+	color #fff
+
+	&__header
+		position relative
+		margin-bottom 26px
+
+		&-name
+			font-size 25px
+			letter-spacing .7px
+
+		&-msg
+			position relative
+			margin-top 9px
+			margin-left 2px
+			padding-left 28px
+			display inline-block
+			font-size 15px
+			color #fff
+			letter-spacing .32px
+
+			&:before
+				position absolute
+				top 0
+				left 0
+				content ''
+				sprite($msg)
+
+		&-edit-btn
+			position absolute
+			top 0
+			right 8px
+			width 235px
+
+			.button
+				padding 0
+
+	&__table
+		width 100%
+		font-family beausans-l
+
+		thead th
+			padding 1px 15px 6px
+			border-bottom 1px solid $bg-green
+			color #000
+			text-align left
+
+		&-row
+			cursor pointer
+
+			&:hover
+			&_state_active
+				background-color #cce5a8
+
+		&-login
+		&-mail
+		&-data
+			border-right 1px solid $bg-green
+
+		&-login
+			width 90px
+
+		&-mail
+			width 140px
+
+		&-data
+			width 80px
+
+		&-type
+			width 130px
+
+		&-cell
+			padding 6px 15px
+			font-size 13px
+			color #000
+			text-align left
+			border-right 1px solid $bg-green
+
+			&:last-child
+				border none
+
+	&__add-btn
+		position absolute
+		bottom 50px
+		right 298px
+
+		.button
+			vertical-align middle

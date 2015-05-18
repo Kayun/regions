@@ -1,11 +1,31 @@
-header.header.wrapper(role="banner")
+header.header(class= headerBanner ? "header_banner" : "" role="banner")
 
-	.header__login
+	- if (headerBanner)
+		.header__banner
+			.header__banner-title Лучшее предложение
+			.header__banner-text Рекламный блок
 
-		.header__login-enter
-			button.button-txt.button-txt_type_icon.button-txt_type_icon-enter(type="button") Войти
+	.wrapper
 
-		.header__login-reg
-			button.button-txt.button-txt_color_green.button-txt_type_icon.button-txt_type_icon-square(type="button") Регистрация
+		.header__login
 
-	a.header__logo(href=jv0)
+			- if (headerBanner)
+				.header__login-name Василий Табуреткин
+
+				.header__login-cabinet
+					button.button-txt.button-txt_type_icon.button-txt_type_icon-square(type="button") Личный кабинет
+
+				.header__login-exit
+					button.button-txt.button-txt_type_icon.button-txt_type_icon-exit(type="button") Выйти
+
+				.header__login-btn
+					button.button.button_size_medium.button_width_100p(type="button") создать
+
+			- else
+				.header__login-enter
+					button.button-txt.button-txt_type_icon.button-txt_type_icon-enter(type="button") Войти
+
+				.header__login-reg
+					button.button-txt.button-txt_color_green.button-txt_type_icon.button-txt_type_icon-square(type="button") Регистрация
+
+		a.header__logo(href=jv0)
