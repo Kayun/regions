@@ -7,8 +7,12 @@
 		margin-bottom 26px
 
 		&-name
+		&-title
 			font-size 25px
 			letter-spacing .7px
+
+		&-title
+			margin-bottom 6px
 
 		&-msg
 			position relative
@@ -26,6 +30,13 @@
 				left 0
 				content ''
 				sprite($msg)
+
+			&_size_big
+				font-size 25px
+				margin-top 5px
+
+				&:before
+					top 5px
 
 		&-edit-btn
 			position absolute
@@ -85,5 +96,50 @@
 		bottom 50px
 		right 298px
 
+		&_page_seller
+			bottom auto
+			top 645px
+			right 48px
+
 		.button
 			vertical-align middle
+
+	&__info
+		padding 11px 12px
+		font-family beausans-l
+		color #000
+
+		&-title
+			margin-bottom 28px
+			font-size 25px
+
+		&-item
+			padding 2px 4px
+			margin 4px 0px 7px -4px
+			font-size 13px
+
+			&:hover
+				background-color #a6dead
+
+		&-key
+		&-value
+		& .link
+			font-size 13px
+			display inline-block
+
+		&-mail
+			margin-bottom 7px
+			font-size 13px
+
+		&-key
+			color $bg-green
+
+		&-value
+
+			&_color_red
+				color #f00
+
+
+
+
+

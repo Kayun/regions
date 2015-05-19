@@ -91,13 +91,174 @@ block content
 					.cabinet__add-btn
 						button.button.button_type_add(type="button")
 
-					.content.content_height_415.content_width_240.float-r
+					.cabinet__info.content.content_height_415.content_width_240.float-r
 
-				.cabinet.container.ionTabs__item(data-name="tab_mode_moder")
+						.cabinet__info-title Testatest
+
+						.cabinet__info-mail testatest@foo.ru
+
+						.cabinet__info-item
+							.cabinet__info-key зарегистрирован:
+							= " "
+							.cabinet__info-value 11.02.13
+
+						.cabinet__info-item
+							.cabinet__info-key последняя активность:
+							= " "
+							.cabinet__info-value 12.12.14
+
+						.cabinet__info-item
+							.cabinet__info-key Объявлений всего:
+							= " "
+							.cabinet__info-value
+								a.link.link_td_under(href=jv0) 14
+
+						.cabinet__info-item
+							.cabinet__info-key Объявлений в модерации:
+							= " "
+							.cabinet__info-value 3
+
+						.cabinet__info-item
+							.cabinet__info-key Объявлений активных:
+							= " "
+							.cabinet__info-value 11
+
+						.cabinet__info-item
+							.cabinet__info-key Объявлений закрытых:
+							= " "
+							.cabinet__info-value 4
+
+						.cabinet__info-item
+							.cabinet__info-key Роль на сайте:
+							= " "
+							.cabinet__info-value клиент
+
+						.cabinet__info-item
+							.cabinet__info-key Статус:
+							= " "
+							.cabinet__info-value
+								span.cabinet__info-value_color_red Заблокирован
+								= " "
+								a.link.link_td_under(href=jv0) разблок.
+
+				.cabinet.container.container_pt_22.ionTabs__item(data-name="tab_mode_moder")
 
 					.cabinet__header
 						.cabinet__header-name Иван Табуреткин
 						.cabinet__header-edit-btn
 							button.button.button_width_100p(type="button") Редактировать профиль
 
+					h2.title__h2.title__h2_pb_12 Список пользователей
+
+					.content.content_height_415.content_width_440.float-l.js-scroll-cont
+
+						table.cabinet__table
+							thead
+								tr
+									th.cabinet__table-login
+										input.chkb-text.chkb-text_fs_12.chkb-text_color_gray.chkb-text_arrow_left(
+											id="login"
+											type="checkbox"
+											name="login"
+											value="check")
+										label(for="login") Логин
+
+									th.cabinet__table-mail
+										input.chkb-text.chkb-text_fs_12.chkb-text_color_gray.chkb-text_arrow_left(
+											id="mail"
+											type="checkbox"
+											name="mail"
+											value="check")
+										label(for="mail") E-mail
+
+									th.cabinet__table-data
+										input.chkb-text.chkb-text_fs_12.chkb-text_color_gray.chkb-text_arrow_left(
+											id="data"
+											type="checkbox"
+											name="data"
+											value="check")
+										label(for="data") Дата
+
+									th.cabinet__table-type
+										input.chkb-text.chkb-text_fs_12.chkb-text_color_gray.chkb-text_arrow_left(
+											id="type"
+											type="checkbox"
+											name="type"
+											value="check")
+										label(for="type") Тип
+
+							tbody
+								- for (var i = 0; i < 32; i++)
+									- var text = ''
+									- if (i === 0)
+										- text = 'администратор'
+
+									- else if (i === 7)
+										- text = 'модератор'
+
+									- else
+										- text = 'клиент'
+
+									+row({
+										cell1: "Testatest",
+										cell2: "testatest@goo.ru",
+										cell3: "11.02.13",
+										cell4: text
+									})
+
+					.cabinet__add-btn
+						button.button.button_type_add(type="button")
+
+					.cabinet__info.content.content_height_415.content_width_240.float-r
+
+						.cabinet__info-title Testatest
+
+						.cabinet__info-mail testatest@foo.ru
+
+						.cabinet__info-item
+							.cabinet__info-key зарегистрирован:
+							= " "
+							.cabinet__info-value 11.02.13
+
+						.cabinet__info-item
+							.cabinet__info-key последняя активность:
+							= " "
+							.cabinet__info-value 12.12.14
+
+						.cabinet__info-item
+							.cabinet__info-key Объявлений всего:
+							= " "
+							.cabinet__info-value
+								a.link.link_td_under(href=jv0) 14
+
+						.cabinet__info-item
+							.cabinet__info-key Объявлений в модерации:
+							= " "
+							.cabinet__info-value 3
+
+						.cabinet__info-item
+							.cabinet__info-key Объявлений активных:
+							= " "
+							.cabinet__info-value 11
+
+						.cabinet__info-item
+							.cabinet__info-key Объявлений закрытых:
+							= " "
+							.cabinet__info-value 4
+
+						.cabinet__info-item
+							.cabinet__info-key Роль на сайте:
+							= " "
+							.cabinet__info-value клиент
+
+						.cabinet__info-item
+							.cabinet__info-key Статус:
+							= " "
+							.cabinet__info-value
+								span.cabinet__info-value_color_red Заблокирован
+								= " "
+								a.link.link_td_under(href=jv0) разблок.
+
 				.ionTabs__preloader
+
+

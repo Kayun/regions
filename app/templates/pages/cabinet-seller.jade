@@ -1,0 +1,154 @@
+extends ../layouts/default
+
+mixin contact(obj)
+	.contact
+		.contact__item= obj.address
+
+		.contact__item
+			a.link.link_td_under(href=jv0)= obj.link
+
+		.contact__item
+			a.link.link_td_under(href="mailto:" + obj.mail)= obj.mail
+
+		.contact__item
+			span skype
+			= " "
+			span= obj.skype
+
+		.contact__item
+			a.contact__phone(href="tel:" + obj.tel)= obj.tel
+
+		.contact__edit
+			button.button(type="button") Редактировать
+
+		.contact__del
+			button.button.button_color_orange(type="button") Удалить
+
+
+
+block head
+	- var pageTitle ='Regions :: Cabinet';
+	- var headerBanner = true;
+
+block content
+	.wrapper
+		include ../blocks/menu
+		h1.title__h1 Личный кабинет
+		.cabinet.container
+
+			.cabinet__header
+				.cabinet__header-title Контактные данные
+
+				.cabinet__header-name Василий Табуреткин
+
+				a.cabinet__header-msg.cabinet__header-msg_size_big(href=jv0)
+					| 3 личных сообщения
+
+				.cabinet__header-edit-btn
+					button.button.button_width_100p(type="button") Редактировать профиль
+
+			.content.content_height_430.js-scroll-cont
+
+				+contact({
+					address: "г. Москва, ул. Ивана Сусанина",
+					link: "http:/italko.ru",
+					mail: "info@italko.ru",
+					skype: "italko",
+					tel: "8 952 630 42 18"
+				})
+
+				+contact({
+					address: "г. Москва, ул. Ивана Сусанина",
+					link: "http:/italko.ru",
+					mail: "info@italko.ru",
+					skype: "italko",
+					tel: "8 952 630 42 18"
+				})
+
+				+contact({
+					address: "г. Москва, ул. Ивана Сусанина",
+					link: "http:/italko.ru",
+					mail: "info@italko.ru",
+					skype: "italko",
+					tel: "8 952 630 42 18"
+				})
+
+				+contact({
+					address: "г. Москва, ул. Ивана Сусанина",
+					link: "http:/italko.ru",
+					mail: "info@italko.ru",
+					skype: "italko",
+					tel: "8 952 630 42 18"
+				})
+
+				+contact({
+					address: "г. Москва, ул. Ивана Сусанина",
+					link: "http:/italko.ru",
+					mail: "info@italko.ru",
+					skype: "italko",
+					tel: "8 952 630 42 18"
+				})
+
+				+contact({
+					address: "г. Москва, ул. Ивана Сусанина",
+					link: "http:/italko.ru",
+					mail: "info@italko.ru",
+					skype: "italko",
+					tel: "8 952 630 42 18"
+				})
+
+			.cabinet__add-btn.cabinet__add-btn_page_seller
+				button.button.button_type_add(type="button")
+
+			h2.title__h2 Объявления
+
+			.content.content_height_600.js-scroll-cont
+
+				+advert ({
+					title: "Рекламный щит на «Рублевском шоссе»",
+					date: "23.01.2015",
+					description: "Текст маркетингового предложения короткого, но информативного",
+					price: [1000],
+					billboardImg: "assets/images/content/advert.jpg",
+					statusBtn: [
+						"button button_size_small button_br_5 button_width_100p button_color_blue",
+						"на модерации"
+					],
+					editBtn: "one"
+				})
+
+				+advert ({
+					title: "Рекламный щит на «Рублевском шоссе»",
+					date: "23.01.2015",
+					description: "Текст маркетингового предложения короткого, но информативного",
+					price: [1000],
+					billboardImg: "assets/images/content/advert.jpg",
+					statusBtn: [
+						"button button_size_small button_br_5 button_width_100p button_color_orange",
+						"нет модерации"
+					],
+					editBtn: "one"
+				})
+
+				+advert ({
+					title: "Рекламный щит на «Рублевском шоссе»",
+					date: "23.01.2015",
+					description: "Текст маркетингового предложения короткого, но информативного",
+					price: [1000],
+					billboardImg: "assets/images/content/advert.jpg",
+					editBtn: "one"
+				})
+
+				+advert ({
+					title: "Рекламный щит на «Рублевском шоссе»",
+					date: "23.01.2015",
+					description: "Текст маркетингового предложения короткого, но информативного",
+					price: [1000],
+					billboardImg: "assets/images/content/advert.jpg",
+					statusBtn: [
+						"button button_size_small button_br_5 button_width_100p button_state_disabled",
+						"в архиве",
+						"disabled"
+					],
+					editBtn: "one"
+				})

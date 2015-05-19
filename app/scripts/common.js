@@ -80,4 +80,17 @@ $(function () {
 		type: 'none'
 	});
 
+	// переключение списка пользователей
+
+	var $tableItems = $('.js-table-row'),
+		tableItemsActiveClass = 'cabinet__table-row_state_active';
+
+	$tableItems.each(function () {
+		var $this = $(this)
+		$this.on('click', function () {
+			$this.addClass(tableItemsActiveClass);
+			$this.siblings().removeClass(tableItemsActiveClass);
+		})
+	})
+
 });
