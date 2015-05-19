@@ -1,31 +1,5 @@
 extends ../layouts/default
 
-mixin contact(obj)
-	.contact
-		.contact__item= obj.address
-
-		.contact__item
-			a.link.link_td_under(href=jv0)= obj.link
-
-		.contact__item
-			a.link.link_td_under(href="mailto:" + obj.mail)= obj.mail
-
-		.contact__item
-			span skype
-			= " "
-			span= obj.skype
-
-		.contact__item
-			a.contact__phone(href="tel:" + obj.tel)= obj.tel
-
-		.contact__edit
-			button.button(type="button") Редактировать
-
-		.contact__del
-			button.button.button_color_orange(type="button") Удалить
-
-
-
 block head
 	- var pageTitle ='Regions :: Cabinet';
 	- var headerBanner = true;
@@ -50,6 +24,7 @@ block content
 			.content.content_height_430.js-scroll-cont
 
 				+contact({
+					buttons: 1,
 					address: "г. Москва, ул. Ивана Сусанина",
 					link: "http:/italko.ru",
 					mail: "info@italko.ru",
@@ -58,6 +33,7 @@ block content
 				})
 
 				+contact({
+					buttons: 1,
 					address: "г. Москва, ул. Ивана Сусанина",
 					link: "http:/italko.ru",
 					mail: "info@italko.ru",
@@ -66,6 +42,7 @@ block content
 				})
 
 				+contact({
+					buttons: 1,
 					address: "г. Москва, ул. Ивана Сусанина",
 					link: "http:/italko.ru",
 					mail: "info@italko.ru",
@@ -74,6 +51,7 @@ block content
 				})
 
 				+contact({
+					buttons: 1,
 					address: "г. Москва, ул. Ивана Сусанина",
 					link: "http:/italko.ru",
 					mail: "info@italko.ru",
@@ -82,6 +60,7 @@ block content
 				})
 
 				+contact({
+					buttons: 1,
 					address: "г. Москва, ул. Ивана Сусанина",
 					link: "http:/italko.ru",
 					mail: "info@italko.ru",
@@ -90,6 +69,7 @@ block content
 				})
 
 				+contact({
+					buttons: 1,
 					address: "г. Москва, ул. Ивана Сусанина",
 					link: "http:/italko.ru",
 					mail: "info@italko.ru",

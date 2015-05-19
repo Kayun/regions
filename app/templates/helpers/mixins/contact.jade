@@ -1,0 +1,24 @@
+mixin contact(obj)
+	.contact
+		.contact__item= obj.address
+
+		.contact__item
+			a.link.link_td_under(href=jv0)= obj.link
+
+		.contact__item
+			a.link.link_td_under(href="mailto:" + obj.mail)= obj.mail
+
+		.contact__item
+			span skype
+			= " "
+			span= obj.skype
+
+		.contact__item
+			a.contact__phone(href="tel:" + obj.tel)= obj.tel
+
+		- if (obj.buttons)
+			.contact__edit
+				button.button(type="button") Редактировать
+
+			.contact__del
+				button.button.button_color_orange(type="button") Удалить

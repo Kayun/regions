@@ -1,0 +1,114 @@
+extends ../layouts/default
+
+mixin msg(obj)
+	- if (obj.disable)
+		button.cabinet__msg-item(type="button" disabled)
+
+			.cabinet__msg-title= obj.title
+			.cabinet__msg-autor= obj.autor
+			.cabinet__msg-text= obj.text
+
+			.cabinet__msg-read
+				.button.button_color_green.button_size_small прочитать
+
+			.cabinet__msg-answer
+				.button.button_size_small ответить
+
+			.cabinet__msg-del
+				.button.button_color_red.button_size_small удалить
+
+	- else
+		button.cabinet__msg-item(type="button")
+
+			.cabinet__msg-title= obj.title
+			.cabinet__msg-autor= obj.autor
+			.cabinet__msg-text= obj.text
+
+			.cabinet__msg-read
+				.button.button_color_green.button_size_small прочитать
+
+			.cabinet__msg-answer
+				.button.button_size_small ответить
+
+			.cabinet__msg-del
+				.button.button_color_red.button_size_small удалить
+
+
+block head
+	- var pageTitle ='Regions :: Cabinet';
+	- var headerBanner = true;
+
+block content
+	.wrapper
+		include ../blocks/menu
+		h1.title__h1 Личный кабинет модератора
+		.cabinet.container
+
+			.cabinet__header
+				.cabinet__header-name Василий Табуреткин
+				a.cabinet__header-msg(href=jv0) 3 личных сообщения
+				.cabinet__header-edit-btn
+					button.button.button_width_100p(type="button") Редактировать профиль
+
+			h2.title__h2 Личные сообщения
+
+			.content.content_height_600.js-scroll-cont
+
+				.cabinet__msg-header
+					.cabinet__msg-header-title Заголовок
+					.cabinet__msg-header-autor Автор
+					.cabinet__msg-header-text Сообщение
+
+				+msg({
+					title: "Привет Вася!",
+					autor: "Дима Успенский",
+					text: "Тест сообщения предлжения короткого, но информативного."
+				})
+
+				+msg({
+					title: "Привет Вася!",
+					autor: "Дима Успенский",
+					text: "Тест сообщения предлжения короткого, но информативного."
+				})
+
+				+msg({
+					title: "Привет Вася!",
+					autor: "Дима Успенский",
+					text: "Тест сообщения предлжения короткого, но информативного."
+				})
+
+				+msg({
+					disable: 1,
+					title: "Привет Вася!",
+					autor: "Дима Успенский",
+					text: "Тест сообщения предлжения короткого, но информативного."
+				})
+
+				+msg({
+					disable: 1,
+					title: "Привет Вася!",
+					autor: "Дима Успенский",
+					text: "Тест сообщения предлжения короткого, но информативного."
+				})
+
+				+msg({
+					disable: 1,
+					title: "Привет Вася!",
+					autor: "Дима Успенский",
+					text: "Тест сообщения предлжения короткого, но информативного."
+				})
+
+				+msg({
+					disable: 1,
+					title: "Привет Вася!",
+					autor: "Дима Успенский",
+					text: "Тест сообщения предлжения короткого, но информативного."
+				})
+
+				+msg({
+					disable: 1,
+					title: "Привет Вася!",
+					autor: "Дима Успенский",
+					text: "Тест сообщения предлжения короткого, но информативного."
+				})
+

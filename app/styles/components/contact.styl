@@ -11,12 +11,29 @@
 	border-radius 5px
 	transition border-color .3s ease
 
+	&:before
+		position absolute
+		bottom -3px
+		left 8px
+		width 650px
+		height 1px
+		content ''
+		background-color #d7d7d7
+
 	&:hover
 		border-color $bg-green
 
 		.contact__edit
 		.contact__del
 			opacity 1
+
+		&:before
+			display none
+
+	&:last-child
+
+		&:before
+			display none
 
 	&__item
 		padding 2px 0
