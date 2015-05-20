@@ -43,6 +43,8 @@ block content
 				button.button.button_color_red(type="button") _color_red
 				button.button.button_color_green(type="button") _color_green
 				button.button.button_color_orange(type="button") _color_orange
+				button.button.button_color_orange.button_shadow(type="button") _shadow
+				button.button.button_color_gray.button_font_black(type="button") _color_gray
 
 			.ui_sections-item
 				button.button.button_size_big(type="button") _size_big
@@ -85,6 +87,12 @@ block content
 					name="check"
 					value="check")
 				label(for="check2") текстовый чекбокс для таблиц
+
+		.ui_sections
+			.ui_sections-title Текстовое поле
+			.ui_sections-item(style="background-color: #39b54a")
+
+				input.input(type="text")
 
 		.ui_sections
 			.ui_sections-title Ссылки
