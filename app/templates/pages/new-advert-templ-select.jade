@@ -1,0 +1,30 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle ='Regions :: Seller';
+	- var headerBanner = true;
+
+block content
+	.wrapper
+		include ../blocks/menu
+		h1.title__h1 Новое объявление
+
+		.new-advert__prog
+			.new-advert__prog-item.new-advert__prog-item_state_active
+				| Информация об объекте
+
+			.new-advert__prog-item.new-advert__prog-item_state_active
+				| Контактные данные
+
+			.new-advert__prog-item
+				| Готово
+
+		form.container(name="contacts-select")
+
+			.new-advert__title.new-advert__title_mb_25 Мои шаблоны
+
+			.new-advert__templ-select
+				button.button.button_ta_left.button_width_100p(type="button") Выбрать имеющиеся
+
+			.new-advert__templ-new
+				button.button.button_ta_left.button_width_100p(type="button") Создать новые
