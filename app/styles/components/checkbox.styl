@@ -80,3 +80,46 @@
 
 			&:before
 				top 4px
+
+.chkb
+
+	& + label
+		position relative
+		padding-left 20px
+		display inline-block
+		font-family beausans-l
+		font-size 14px
+		color #fff
+		cursor pointer
+
+		&:before
+			position absolute
+			top 0
+			left 0
+			width 12px
+			height 12px
+			content ''
+			border 1px solid #fff
+			border-radius 2px
+			transition background-color .3s ease
+
+		&:hover
+
+			&:before
+				background-color #fff
+
+	&:not(checked)
+		position absolute
+		opacity 0
+
+		& + label
+
+			&:before
+				background-color $bg-green
+
+	&:checked
+
+		& + label
+
+			&:before
+				background-color #fff

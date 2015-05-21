@@ -1,0 +1,29 @@
+mixin jelect(options, items)
+	- for (var i = 0; i < items.length; i++)
+		- if (items[i][1])
+			- var activeItem = items[i][0];
+			- var val = i
+
+	.jelect(role="select")&attributes(options.modClass ? options.modClass : "")
+		input.jelect-input(
+			type="text"
+			id= options.id
+			name= options.name
+			value= i
+			data-text= activeItem)
+
+		.jelect-current(
+			tabindex="0"
+			role="button"
+		)= activeItem
+
+		ul.jelect-options
+
+			- each val, index in items
+				li.jelect-option(
+					class= val[1] ? ".jelect-option_state_active" : ""
+					data-val= index
+					tabindex="0"
+					role="option"
+				)= val[i][0]
+

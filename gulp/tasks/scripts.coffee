@@ -13,6 +13,7 @@ gulp.task 'scripts', ->
 			'libs/swiper/dist/js/swiper.jquery.js'
 			'libs/jquery.nicescroll/jquery.nicescroll.js'
 			'libs/ion.tabs/js/ion-tabs/ion.tabs.js'
+			'libs/jelect/jquery.jelect.js'
 			'common.js'
 		],
 			cwd: 'app/scripts'

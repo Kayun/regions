@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Regions :: Seller</title>
+		<link href="assets/styles/common.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div role="main" class="main">
+			<header role="banner" class="header header_banner">
+				<div class="header__banner">
+					<div class="header__banner-title">Лучшее предложение</div>
+					<div class="header__banner-text">Рекламный блок</div>
+				</div>
+				<div class="wrapper">
+					<div class="header__login">
+						<div class="header__login-name">Василий Табуреткин</div>
+						<div class="header__login-cabinet">
+							<button type="button" class="button-txt button-txt_type_icon button-txt_type_icon-square">Личный кабинет</button>
+						</div>
+						<div class="header__login-exit">
+							<button type="button" class="button-txt button-txt_type_icon button-txt_type_icon-exit">Выйти</button>
+						</div>
+						<div class="header__login-btn">
+							<button type="button" class="button button_size_medium button_width_100p">создать</button>
+						</div>
+					</div>
+					<a href="javascript:void(0);" class="header__logo"></a>
+				</div>
+			</header>
+			<div class="wrapper">
+				<nav class="menu">
+					<ul>
+						<li class="menu__item"><a href="javascript:void(0);" class="menu__link menu__link_lh_26">Телевидение</a></li>
+						<li class="menu__item"><a href="javascript:void(0);" class="menu__link">Наружная реклама</a></li>
+						<li class="menu__item"><a href="javascript:void(0);" class="menu__link menu__link_lh_26">Радио</a></li>
+						<li class="menu__item"><a href="javascript:void(0);" class="menu__link menu__link_lh_26">Пресса</a></li>
+						<li class="menu__item"><a href="javascript:void(0);" class="menu__link">Транзитная реклама</a></li>
+						<li class="menu__item"><a href="javascript:void(0);" class="menu__link">Интернет реклама</a></li>
+					</ul>
+				</nav>
+				<h1 class="title__h1">Новое объявление</h1>
+				<div class="new-advert__prog">
+					<div class="new-advert__prog-item new-advert__prog-item_state_active">Информация об объекте</div>
+					<div class="new-advert__prog-item new-advert__prog-item_state_active">Контактные данные</div>
+					<div class="new-advert__prog-item">Готово</div>
+				</div>
+				<form name="object" class="container">
+					<div class="new-advert__title new-advert__title_mb_25">Информация об объекте</div>
+					<div class="new-advert__obj">
+						<div class="new-advert__obj-item">
+							<div class="new-advert__obj-title">Название</div>
+							<div class="new-advert__obj-input">
+								<input type="text" name="name" class="input input_width_100p">
+							</div>
+						</div>
+						<div class="new-advert__obj-item">
+							<div class="new-advert__obj-title">Раздел</div>
+							<div class="new-advert__obj-input">
+								<input type="text" name="section" class="input input_width_100p">
+							</div>
+						</div>
+						<div class="new-advert__obj-item">
+							<div class="new-advert__obj-title">Актуально до</div>
+							<div class="new-advert__obj-input">
+								<input type="text" name="topical" class="input input_width_100p">
+							</div>
+						</div>
+						<div class="new-advert__obj-item">
+							<div class="new-advert__obj-title">Конкурентные приемущества</div>
+							<div class="new-advert__obj-input">
+								<div class="new-advert__obj-check">
+									<input id="check1" type="checkbox" name="title" value="0" class="chkb">
+									<label for="check1">Только в названии</label>
+								</div>
+								<div class="new-advert__obj-check">
+									<input id="check2" type="checkbox" name="gift" value="0" class="chkb">
+									<label for="check2">Подарок</label>
+								</div>
+								<div class="new-advert__obj-check">
+									<input id="check3" type="checkbox" name="service" value="1" checked class="chkb">
+									<label for="check3">Дополнительные услуги</label>
+								</div>
+							</div>
+						</div>
+						<div class="new-advert__obj-item">
+							<div class="new-advert__obj-title">Специальное предложение</div>
+							<div class="new-advert__obj-input">
+								<input type="text" name="topical" class="input input_width_100p">
+							</div>
+						</div>
+						<div class="new-advert__obj-item">
+							<div class="new-advert__obj-title">Возможность заказа
+								<br>через ProMedia</div>
+							<div class="new-advert__obj-input">
+								<input type="text" name="topical" class="input input_width_100p">
+							</div>
+						</div>
+						<div class="new-advert__obj-item">
+							<div class="new-advert__obj-title">Маркетинговое
+								<br>предложение</div>
+							<div class="new-advert__obj-input">
+								<textarea name="offer" class="textarea textarea_height_85 textarea_width_100p"></textarea>
+							</div>
+						</div>
+						<div class="new-advert__obj-item">
+							<div class="new-advert__obj-title">Описание</div>
+							<div class="new-advert__obj-input">
+								<textarea name="discription" class="textarea textarea_height_135 textarea_width_100p"></textarea>
+							</div>
+						</div>
+						<div class="new-advert__obj-wrap">
+							<div class="new-advert__obj-slide">
+								<div class="new-advert__obj-close"></div>
+								<div class="new-advert__obj-img"><img src="assets/images/content/object.jpg"></div>
+							</div>
+							<div class="new-advert__obj-slide">
+								<div class="new-advert__obj-close"></div>
+								<div class="new-advert__obj-img"><img src="assets/images/content/object.jpg"></div>
+							</div>
+							<div class="new-advert__obj-slide">
+								<div class="new-advert__obj-close"></div>
+								<div class="new-advert__obj-img"><img src="assets/images/content/object.jpg"></div>
+							</div>
+							<div class="new-advert__obj-left"></div>
+							<div class="new-advert__obj-right"></div>
+						</div>
+						<div class="new-advert__obj-photo">
+							<button type="button" class="button button_width_100p">Загрузить фото</button>
+						</div>
+						<div class="new-advert__obj-btn">
+							<button type="submit" class="button button_width_100p">Далее</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="assets/scripts/common.min.js"></script>
+	</body>
+
+</html>

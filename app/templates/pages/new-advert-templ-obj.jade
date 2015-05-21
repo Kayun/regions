@@ -1,0 +1,130 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle ='Regions :: Seller';
+	- var headerBanner = true;
+
+block content
+	.wrapper
+		include ../blocks/menu
+		h1.title__h1 Новое объявление
+
+		.new-advert__prog
+			.new-advert__prog-item.new-advert__prog-item_state_active
+				| Информация об объекте
+
+			.new-advert__prog-item.new-advert__prog-item_state_active
+				| Контактные данные
+
+			.new-advert__prog-item
+				| Готово
+
+		form.container(name="object")
+
+			.new-advert__title.new-advert__title_mb_25 Информация об объекте
+
+			.new-advert__obj
+
+				.new-advert__obj-item
+					.new-advert__obj-title Название
+
+					.new-advert__obj-input
+						input.input.input_width_100p(type="text" name="name")
+
+				.new-advert__obj-item
+					.new-advert__obj-title Раздел
+
+					.new-advert__obj-input
+						input.input.input_width_100p(type="text" name="section")
+
+				.new-advert__obj-item
+					.new-advert__obj-title Актуально до
+
+					.new-advert__obj-input
+						input.input.input_width_100p(type="text" name="topical")
+
+				.new-advert__obj-item
+					.new-advert__obj-title Конкурентные приемущества
+
+					.new-advert__obj-input
+
+						.new-advert__obj-check
+							input.chkb(
+								id="check1"
+								type="checkbox"
+								name="title"
+								value="0")
+							label(for="check1") Только в названии
+
+						.new-advert__obj-check
+							input.chkb(
+								id="check2"
+								type="checkbox"
+								name="gift"
+								value="0")
+							label(for="check2") Подарок
+
+						.new-advert__obj-check
+							input.chkb(
+								id="check3"
+								type="checkbox"
+								name="service"
+								value="1"
+								checked)
+							label(for="check3") Дополнительные услуги
+
+				.new-advert__obj-item
+					.new-advert__obj-title Специальное предложение
+
+					.new-advert__obj-input
+						input.input.input_width_100p(type="text" name="topical")
+
+				.new-advert__obj-item
+					.new-advert__obj-title
+						| Возможность заказа
+						br
+						| через ProMedia
+
+					.new-advert__obj-input
+						input.input.input_width_100p(type="text" name="topical")
+
+				.new-advert__obj-item
+					.new-advert__obj-title
+						| Маркетинговое
+						br
+						| предложение
+
+					.new-advert__obj-input
+						textarea.textarea.textarea_height_85.textarea_width_100p(name="offer")
+
+				.new-advert__obj-item
+					.new-advert__obj-title Описание
+
+					.new-advert__obj-input
+						textarea.textarea.textarea_height_135.textarea_width_100p(name="discription")
+
+				.new-advert__obj-wrap
+
+					.new-advert__obj-slide
+						.new-advert__obj-close
+						.new-advert__obj-img
+							img(src="assets/images/content/object.jpg")
+
+					.new-advert__obj-slide
+						.new-advert__obj-close
+						.new-advert__obj-img
+							img(src="assets/images/content/object.jpg")
+
+					.new-advert__obj-slide
+						.new-advert__obj-close
+						.new-advert__obj-img
+							img(src="assets/images/content/object.jpg")
+
+					.new-advert__obj-left
+					.new-advert__obj-right
+
+				.new-advert__obj-photo
+					button.button.button_width_100p(type="button") Загрузить фото
+
+				.new-advert__obj-btn
+					button.button.button_width_100p(type="submit") Далее
