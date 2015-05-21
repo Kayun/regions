@@ -1,0 +1,101 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle ='Regions :: Seller';
+	- var headerBanner = true;
+
+block content
+	.wrapper
+		include ../blocks/menu
+		h1.title__h1 Новое объявление
+
+		.new-advert__prog
+			.new-advert__prog-item.new-advert__prog-item_state_active
+				| Информация об объекте
+
+			.new-advert__prog-item.new-advert__prog-item_state_active
+				| Контактные данные
+
+			.new-advert__prog-item
+				| Готово
+
+		form.container(name="contacts-select")
+
+			.new-advert__title Выберите контактные данные из списка
+
+			.content.content_height_430.js-scroll-cont
+
+				+contact({
+					btnSelect: true,
+					select: true,
+					address: "г. Москва, ул. Ивана Сусанина",
+					link: "http:/italko.ru",
+					mail: "info@italko.ru",
+					skype: "italko",
+					tel: "8 952 630 42 18"
+				})
+
+				+contact({
+					btnSelect: true,
+					address: "г. Москва, ул. Ивана Сусанина",
+					link: "http:/italko.ru",
+					mail: "info@italko.ru",
+					skype: "italko",
+					tel: "8 952 630 42 18"
+				})
+
+				+contact({
+					btnSelect: true,
+					disable: true,
+					address: "г. Москва, ул. Ивана Сусанина",
+					link: "http:/italko.ru",
+					mail: "info@italko.ru",
+					skype: "italko",
+					tel: "8 952 630 42 18"
+				})
+
+				+contact({
+					btnSelect: true,
+					disable: true,
+					address: "г. Москва, ул. Ивана Сусанина",
+					link: "http:/italko.ru",
+					mail: "info@italko.ru",
+					skype: "italko",
+					tel: "8 952 630 42 18"
+				})
+
+				+contact({
+					btnSelect: true,
+					disable: true,
+					address: "г. Москва, ул. Ивана Сусанина",
+					link: "http:/italko.ru",
+					mail: "info@italko.ru",
+					skype: "italko",
+					tel: "8 952 630 42 18"
+				})
+
+				+contact({
+					btnSelect: true,
+					disable: true,
+					address: "г. Москва, ул. Ивана Сусанина",
+					link: "http:/italko.ru",
+					mail: "info@italko.ru",
+					skype: "italko",
+					tel: "8 952 630 42 18"
+				})
+
+				+contact({
+					btnSelect: true,
+					disable: true,
+					address: "г. Москва, ул. Ивана Сусанина",
+					link: "http:/italko.ru",
+					mail: "info@italko.ru",
+					skype: "italko",
+					tel: "8 952 630 42 18"
+				})
+
+			.new-advert__contact-btn
+				button.button.button_width_100p(type="button") Далее
+
+			.new-advert__contact-add-btn
+				button.button.button_type_add(type="button")

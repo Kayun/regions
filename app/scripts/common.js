@@ -93,4 +93,17 @@ $(function () {
 		})
 	})
 
+	// переключение контактных данных
+
+	var $contacts = $('.js-contact'),
+		contactActiveClass = 'contact_state_active';
+
+	$contacts.each(function () {
+		var $this = $(this)
+		$this.on('click', function () {
+			$this.addClass(contactActiveClass);
+			$this.siblings().removeClass(contactActiveClass);
+		})
+	})
+
 });

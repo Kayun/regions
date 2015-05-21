@@ -1,24 +1,67 @@
 mixin contact(obj)
-	.contact
-		.contact__item= obj.address
+	- if (obj.btnSelect)
+		- if (obj.disable)
+			button.contact(
+					type="button"
+					class= obj.select ? "contact_state_active" : ""
+					disabled)
+				.contact__item= obj.address
 
-		.contact__item
-			a.link.link_td_under(href=jv0)= obj.link
+				.contact__item
+					a.link.link_td_under(href="javascript: return false")= obj.link
 
-		.contact__item
-			a.link.link_td_under(href="mailto:" + obj.mail)= obj.mail
+				.contact__item
+					a.link.link_td_under(href="javascript: return false")= obj.mail
 
-		.contact__item
-			span skype
-			= " "
-			span= obj.skype
+				.contact__item
+					span skype
+					= " "
+					span= obj.skype
 
-		.contact__item
-			a.contact__phone(href="tel:" + obj.tel)= obj.tel
+				.contact__item
+					a.contact__phone(href="javascript: return false")= obj.tel
 
-		- if (obj.buttons)
-			.contact__edit
-				button.button(type="button") Редактировать
+		- else
+			button.contact.js-contact(
+					type="button"
+					class= obj.select ? "contact_state_active" : "")
+				.contact__item= obj.address
 
-			.contact__del
-				button.button.button_color_orange(type="button") Удалить
+				.contact__item
+					a.link.link_td_under(href=jv0)= obj.link
+
+				.contact__item
+					a.link.link_td_under(href="mailto:" + obj.mail)= obj.mail
+
+				.contact__item
+					span skype
+					= " "
+					span= obj.skype
+
+				.contact__item
+					a.contact__phone(href="tel:" + obj.tel)= obj.tel
+
+	- else
+		.contact(type="button")
+			.contact__item= obj.address
+
+			.contact__item
+				a.link.link_td_under(href=jv0)= obj.link
+
+			.contact__item
+				a.link.link_td_under(href="mailto:" + obj.mail)= obj.mail
+
+			.contact__item
+				span skype
+				= " "
+				span= obj.skype
+
+			.contact__item
+				a.contact__phone(href="tel:" + obj.tel)= obj.tel
+
+			- if (obj.buttons)
+				button.contact__edit(type="button")
+					.button Редактировать
+
+				button.contact__del(type="button")
+					.button.button_color_orange Удалить
