@@ -1,15 +1,16 @@
 mixin jelect(options, items)
-	- for (var i = 0; i < items.length; i++)
-		- if (items[i][1])
-			- var activeItem = items[i][0];
-			- var val = i
+	- var activeItem, activeIndex;
+	- each val, index in items
+		- if (val[1])
+			- activeItem = val[0];
+			- activeIndex = index;
 
-	.jelect(role="select")&attributes(options.modClass ? options.modClass : "")
+	.jelect(role="select")&attributes(attributes)
 		input.jelect-input(
 			type="text"
 			id= options.id
 			name= options.name
-			value= i
+			value= activeIndex
 			data-text= activeItem)
 
 		.jelect-current(
@@ -21,9 +22,9 @@ mixin jelect(options, items)
 
 			- each val, index in items
 				li.jelect-option(
-					class= val[1] ? ".jelect-option_state_active" : ""
+					class= val[1] ? "jelect-option_state_active" : ""
 					data-val= index
 					tabindex="0"
 					role="option"
-				)= val[i][0]
+				)= val[0]
 

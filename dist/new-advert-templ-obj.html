@@ -61,7 +61,16 @@
 						<div class="new-advert__obj-item">
 							<div class="new-advert__obj-title">Раздел</div>
 							<div class="new-advert__obj-input">
-								<input type="text" name="section" class="input input_width_100p">
+								<div role="select" class="jelect jelect_width_100p">
+									<input type="text" id="select1" name="section" value="0" data-text="Наружная реклама" class="jelect-input" />
+									<div tabindex="0" role="button" class="jelect-current">Наружная реклама</div>
+									<ul class="jelect-options">
+										<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">Наружная реклама</li>
+										<li data-val='1' tabindex="0" role="option" class="jelect-option">Внутренняя реклама</li>
+										<li data-val='2' tabindex="0" role="option" class="jelect-option">Еще какая-нибудь реклама</li>
+										<li data-val='3' tabindex="0" role="option" class="jelect-option">И еще реклама</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 						<div class="new-advert__obj-item">
@@ -90,27 +99,43 @@
 						<div class="new-advert__obj-item">
 							<div class="new-advert__obj-title">Специальное предложение</div>
 							<div class="new-advert__obj-input">
-								<input type="text" name="topical" class="input input_width_100p">
+								<div role="select" class="jelect jelect_width_100p">
+									<input type="text" id="select2" name="special" value="0" data-text="Нет" class="jelect-input" />
+									<div tabindex="0" role="button" class="jelect-current">Нет</div>
+									<ul class="jelect-options">
+										<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">Нет</li>
+										<li data-val='1' tabindex="0" role="option" class="jelect-option">Да</li>
+										<li data-val='2' tabindex="0" role="option" class="jelect-option">Понятия не имею</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 						<div class="new-advert__obj-item">
 							<div class="new-advert__obj-title">Возможность заказа
 								<br>через ProMedia</div>
 							<div class="new-advert__obj-input">
-								<input type="text" name="topical" class="input input_width_100p">
+								<div role="select" class="jelect jelect_width_100p">
+									<input type="text" id="select3" name="promedia" value="0" data-text="Только через нас" class="jelect-input" />
+									<div tabindex="0" role="button" class="jelect-current">Только через нас</div>
+									<ul class="jelect-options">
+										<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">Только через нас</li>
+										<li data-val='1' tabindex="0" role="option" class="jelect-option">Не только через нас</li>
+										<li data-val='2' tabindex="0" role="option" class="jelect-option">Нет никакого ProMedia</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 						<div class="new-advert__obj-item">
 							<div class="new-advert__obj-title">Маркетинговое
 								<br>предложение</div>
 							<div class="new-advert__obj-input">
-								<textarea name="offer" class="textarea textarea_height_85 textarea_width_100p"></textarea>
+								<textarea name="offer" row="4" class="textarea textarea_height_85 textarea_width_100p"></textarea>
 							</div>
 						</div>
 						<div class="new-advert__obj-item">
 							<div class="new-advert__obj-title">Описание</div>
 							<div class="new-advert__obj-input">
-								<textarea name="discription" class="textarea textarea_height_135 textarea_width_100p"></textarea>
+								<textarea name="discription" row="6" class="textarea textarea_height_135 textarea_width_100p"></textarea>
 							</div>
 						</div>
 						<div class="new-advert__obj-wrap">

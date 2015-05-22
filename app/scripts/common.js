@@ -4,6 +4,10 @@ $(function () {
 
 	menuCount();
 
+	// кастомные селекты
+
+	$('.jelect').jelect();
+
 	// слайдер на главной странице
 
 	var mainSlider;
@@ -86,12 +90,12 @@ $(function () {
 		tableItemsActiveClass = 'cabinet__table-row_state_active';
 
 	$tableItems.each(function () {
-		var $this = $(this)
+		var $this = $(this);
 		$this.on('click', function () {
 			$this.addClass(tableItemsActiveClass);
 			$this.siblings().removeClass(tableItemsActiveClass);
-		})
-	})
+		});
+	});
 
 	// переключение контактных данных
 
@@ -99,11 +103,11 @@ $(function () {
 		contactActiveClass = 'contact_state_active';
 
 	$contacts.each(function () {
-		var $this = $(this)
+		var $this = $(this);
 		$this.on('click', function () {
 			$this.addClass(contactActiveClass);
 			$this.siblings().removeClass(contactActiveClass);
-		})
-	})
+		});
+	});
 
 });

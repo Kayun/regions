@@ -1,0 +1,97 @@
+.jelect
+	position relative
+	width 300px
+	height 30px
+	font-family beausans-l
+	font-size 14px
+	color #8dc63f
+	background-color #fff
+	border-radius 7px
+	transition box-shadow .3s ease
+	will-change box-shadow
+
+	&_width_100p
+		width 100%
+
+	&_state_active
+		box-shadow 6px 8px 10px rgba(0, 0, 0, .5)
+		border-radius 7px 7px 0 0
+
+		.jelect-current
+			z-index 2
+			border-radius 7px 7px 0 0
+			color #73a133
+
+			&:before
+				border-color #73a133
+
+	&-input
+		position absolute
+		opacity 0
+
+	&-current
+		position absolute
+		z-index 1
+		top 0
+		left 0
+		width 100%
+		height 100%
+		line-height 30px
+		text-align center
+		background-color #fff
+		border-radius 7px
+		cursor pointer
+		transition color .3s ease, border-radius 0s ease .3s
+
+		&:before
+			position absolute
+			top 9px
+			right 10px
+			width 8px
+			height 8px
+			content ''
+			border-right 1px solid #8dc63f
+			border-bottom 1px solid #8dc63f
+			transform rotate(45deg)
+			transition border-color .3s ease
+
+		&:hover
+			color #73a133
+
+			&:before
+				border-color #73a133
+
+	&-options
+		position absolute
+		z-index 1
+		top 30px
+		left 0
+		padding 0 15px
+		width 100%
+		max-height 0
+		overflow hidden
+		background-color #fff
+		border-radius 0 0 7px 7px
+		transition all .3s ease
+		will-change padding, max-height
+
+		&_state_active
+			z-index 2
+			padding 5px 15px
+			max-height 200px
+			box-shadow 6px 9px 10px rgba(0, 0, 0, .5)
+
+	&-option
+		margin 2px 0px
+		height 30px
+		line-height 28px
+		text-align center
+		border 1px solid $trn
+		border-radius 7px
+		cursor pointer
+		transition all .3s ease
+
+		&:hover
+		&_state_active
+			color #73a133
+			border-color #73a133
