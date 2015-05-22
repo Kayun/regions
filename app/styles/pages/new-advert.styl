@@ -141,37 +141,50 @@
 			&:last-child
 				margin 0
 
+		&-slider
+			margin-left 217px
+			padding-top 6px
+			width 452px
+			height 139px
+
 		&-wrap
 			position relative
-			margin-left 217px
-			font-size 0
 
 		&-slide
 			position relative
-			width 133px
 			height 133px
-			display inline-block
+			width 133px
+			transform-origin 50% 50%
+			transform scale(1)
+			transition transform .5s ease
+			will-change transform
 
-			& + &
-				margin-left 23px
+			&_state_close
+				transform scale(0)
 
 		&-img
-			border-radius 5px
+			height 100%
 			overflow hidden
+			border-radius 5px
 
 		&-close
 			position absolute
-			top -3px
+			top -5px
 			right -7px
-			width 5px
-			height 5px
+			width 6px
+			height 6px
 			cursor pointer
+			opacity 1
+			transition opacity .3s ease
+
+			&_state_hide
+				opacity 0
 
 			&:before
 			&:after
 				position absolute
-				top 0
-				left 0
+				top 2px
+				left -1px
 				width 8px
 				height 1px
 				content ''
@@ -193,13 +206,15 @@
 			border-right 1px solid #fff
 			cursor pointer
 
+		/.swiper-button-disabled
+			display none
+
 		&-right
-			right 3px
+			right 6px
 			transform rotate(45deg)
 
 		&-left
-			display none
-			left -27px
+			left 193px
 			transform rotate(-135deg)
 
 		&-photo

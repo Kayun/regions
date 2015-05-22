@@ -10,9 +10,9 @@ $(function () {
 
 	// слайдер на главной странице
 
-	var mainSlider;
+	var mainSlider, objSlider;
 
-	mainSlider = new Swiper ('.swiper-container', {
+	mainSlider = new Swiper ('.main-slider', {
 		direction: 'horizontal',
 		speed: 500,
 		loop: true,
@@ -22,6 +22,40 @@ $(function () {
 		paginationClickable: true,
 		nextButton: '.main-slider__next',
 		prevButton: '.main-slider__prev'
+	});
+
+	// слайдер в карточке объекта
+
+	objSlider = new Swiper ('.new-advert__obj-slider', {
+		initialSlide: 0,
+		direction: 'horizontal',
+		speed: 500,
+		spaceBetween: 15,
+		slidesPerView: 3,
+		simulateTouch: false,
+		nextButton: '.new-advert__obj-right',
+		prevButton: '.new-advert__obj-left'
+	});
+
+	// удаление слайдов
+
+	var $slideDel = $('.js-slide-del'),
+		slideCloseClass = 'new-advert__obj-slide_state_close',
+		slideDelHideClass = 'new-advert__obj-close_state_hide';
+
+	$slideDel.each(function () {
+
+		$(this).on('click', function () {
+			var $this = $(this),
+				slideIndex = $this.parent().parent().index();
+
+			$this.addClass(slideDelHideClass);
+			$this.parent().addClass(slideCloseClass);
+
+			setTimeout(function () {
+				objSlider.removeSlide(slideIndex);
+			}, 500);
+		});
 	});
 
 	// счетсик в меню, склонение слова "объявлений"
