@@ -1,0 +1,43 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle ='Regions :: Seller';
+	- var headerBanner = true;
+
+block content
+	.wrapper
+		include ../blocks/menu
+		h1.title__h1 Платные услуги
+
+		.paid
+
+			.paid__item
+				.paid__logo.paid__logo_type_special
+				h2.paid__title Спецразмещение
+				.paid__discr
+					| Размещение в блоке специальных предложений на&nbsp;3&nbsp;дня
+				a.link.link_td_under(href=jv0) подробнее
+				.paid__price 299p.
+				.paid__btn
+					button.button.button_width_100p(type="button") Купить
+
+			.paid__item
+				.paid__logo.paid__logo_type_up
+				h2.paid__title Поднять наверх
+				.paid__discr
+					| Все счетчики обнулятся и объявление вновь станет первым в списке
+				a.link.link_td_under(href=jv0) подробнее
+				.paid__price 99p.
+				.paid__btn
+					button.button.button_width_100p(type="button") Купить
+
+			.paid__item
+				.paid__logo.paid__logo_type_vip
+				h2.paid__title VIP-статус
+				.paid__discr
+					| Объявление окажется на самом видном месте - на главной странице
+				a.link.link_td_under(href=jv0) подробнее
+				.paid__price 499p.
+				.paid__btn
+					button.button.button_width_100p(type="button") Купить
+

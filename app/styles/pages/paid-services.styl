@@ -1,0 +1,75 @@
+.paid
+	margin-top 19px
+	height 517px
+	display table
+	font-size 0
+
+	&__item
+		position relative
+		height 100%
+		width 228px
+		display inline-block
+		text-align center
+		vertical-align top
+		border 3px solid $trn
+		border-radius 10px
+		transition border-color .3s ease
+
+		& + &
+			margin-left 40px
+
+		&:hover
+			border-color #8dc63f
+
+	&__logo
+		position absolute
+		top 0
+		left 0
+
+		&_type
+
+			&_special
+				top 18px
+				left 38px
+				sprite($special)
+
+			&_up
+				top 0
+				left 42px
+				sprite($up)
+
+			&_vip
+				top 43px
+				left 39px
+				sprite($vip)
+
+	&__title
+		padding-top 160px
+		font-family beausans-sb
+		font-size 22px
+		color #000
+		letter-spacing .8px
+
+	&__discr
+		margin-top 13px
+		font-family beausans-xth
+		font-size 16px
+		line-height 18px
+		color #000
+
+	.link
+		display inline-block
+		font-family beausans-xth
+		font-size 16px
+		line-height 18px
+
+	&__price
+		margin-top 21px
+		padding-left 22px
+		font-family beausans-r
+		font-size 46px
+		color #8dc63f
+
+	&__btn
+		margin 15px auto 0
+		width 170px
