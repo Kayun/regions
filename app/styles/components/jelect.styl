@@ -2,6 +2,7 @@
 	position relative
 	width 300px
 	height 30px
+	display inline-block
 	font-family beausans-l
 	font-size 14px
 	color #8dc63f
@@ -10,8 +11,13 @@
 	transition box-shadow .3s ease
 	will-change box-shadow
 
-	&_width_100p
-		width 100%
+	&_width
+
+		&_100p
+			width 100%
+
+		&_70
+			width 70px
 
 	&_state_active
 		box-shadow 6px 8px 10px rgba(0, 0, 0, .5)

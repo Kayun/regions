@@ -1,4 +1,6 @@
-mixin advert-count(num)
-	.advert-count
+mixin advert-count(num, big)
+	.advert-count(class= big ? "advert-count_size_big" : "")
+		- if (big)
+			.advert-count__text найдено
 		.advert-count__num.js-menu-count=num
 		.advert-count__text объявлений

@@ -2,8 +2,11 @@ header.header(class= headerBanner ? "header_banner" : "" role="banner")
 
 	- if (headerBanner)
 		.header__banner
-			.header__banner-title Лучшее предложение
-			.header__banner-text Рекламный блок
+			.header__banner-title(class= headerSearch ? "header__banner-title_page_outdoor" : "")
+				| Лучшее предложение
+
+			.header__banner-text(class= headerSearch ? "header__banner-text_page_outdoor" : "")
+				| Рекламный блок
 
 	.wrapper
 
@@ -18,7 +21,7 @@ header.header(class= headerBanner ? "header_banner" : "" role="banner")
 				.header__login-exit
 					button.button-txt.button-txt_type_icon.button-txt_type_icon-exit(type="button") Выйти
 
-				.header__login-btn
+				.header__login-btn(class= headerSearch ? "header__login-btn_state_hide" : "")
 					button.button.button_size_medium.button_width_100p(type="button") создать
 
 			- else

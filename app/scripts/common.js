@@ -118,6 +118,12 @@ $(function () {
 		type: 'none'
 	});
 
+	// табы для меню поиска
+
+	$.ionTabs('#tabsMenuSearch', {
+		type: 'hash'
+	});
+
 	// переключение списка пользователей
 
 	var $tableItems = $('.js-table-row'),

@@ -1,0 +1,726 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle ='Regions :: Seller';
+	- var headerBanner = true;
+	- var headerSearch = true;
+
+block content
+	.wrapper
+
+		.search__banner
+			.search__banner-count
+				+advert-count(23, true)
+
+			h1.title__h1.title__h1_font_reg Наружная реклама
+
+			.search__banner-icon
+
+		.ionTabs#tabsMenuSearch(data-name="tabs_menu_search")
+
+			ul.menu.ionTabs__head
+
+				li.menu__item.menu__item_type_tab.ionTabs__tab(data-target="tv")
+					.menu__link.menu__link_lh_26
+						| Телевидение
+
+				li.menu__item.menu__item_type_tab.ionTabs__tab(data-target="outdoor")
+					.menu__link
+						| Наружная реклама
+
+				li.menu__item.menu__item_type_tab.ionTabs__tab(data-target="radio")
+					.menu__link.menu__link_lh_26
+						| Радио
+
+				li.menu__item.menu__item_type_tab.ionTabs__tab(data-target="press")
+					.menu__link.menu__link_lh_26
+						| Пресса
+
+				li.menu__item.menu__item_type_tab.ionTabs__tab(data-target="tranzit")
+					.menu__link
+						| Транзитная реклама
+
+				li.menu__item.menu__item_type_tab.ionTabs__tab(data-target="internet")
+					.menu__link
+						| Интернет реклама
+
+			.ionTabs__body
+
+				form.search__form.ionTabs__item(data-name="tv" name="search-tv")
+
+					.search__form-input
+						input.input.input_width_100p(type="text" placeholder="Поиск")
+
+					.search__form-region
+						+jelect(
+							{
+								id: "select11",
+								name: "region",
+							},
+							[
+								["Регион", 1],
+								["Регион"],
+								["Регион"],
+								["Регион"],
+								["Регион"],
+								["Регион"]
+							]
+						)(class="jelect_width_100p")
+
+					.search__form-checkbox
+
+						input.chkb(
+							id="check11"
+							type="checkbox"
+							name="title"
+							value="check"
+							checked)
+						label(for="check11") Только в названии
+
+						input.chkb(
+							id="check12"
+							type="checkbox"
+							name="promedia"
+							value="check")
+						label(for="check12") Заказ через PRO Media
+
+					.search__form-price
+						span Цена от
+						= " "
+						input.input.input_width_90(type="text")
+						= " "
+						span до
+						= " "
+						input.input.input_width_90(type="text")
+						= ""
+						+jelect(
+							{
+								id: "select12",
+								name: "unit",
+							},
+							[
+								["м2", 1],
+								["м3"],
+								["пм"]
+							]
+						)(class="jelect_width_70")
+
+					.search__form-btn-search
+						button.button.button_width_100p(type="submit") Найти
+
+					.search__form-btn-create
+						button.button.button_width_100p(type="button") Создать объявление
+
+				form.search__form.ionTabs__item(data-name="outdoor" name="search-outdoor")
+
+					.search__form-input
+						input.input.input_width_100p(type="text" placeholder="Поиск")
+
+					.search__form-region
+						+jelect(
+							{
+								id: "select21",
+								name: "region",
+							},
+							[
+								["Регион", 1],
+								["Регион"],
+								["Регион"],
+								["Регион"],
+								["Регион"],
+								["Регион"]
+							]
+						)(class="jelect_width_100p")
+
+					.search__form-checkbox
+
+						input.chkb(
+							id="check21"
+							type="checkbox"
+							name="title"
+							value="check"
+							checked)
+						label(for="check21") Только в названии
+
+						input.chkb(
+							id="check22"
+							type="checkbox"
+							name="promedia"
+							value="check")
+						label(for="check22") Заказ через PRO Media
+
+					.search__form-price
+						span Цена от
+						= " "
+						input.input.input_width_90(type="text")
+						= " "
+						span до
+						= " "
+						input.input.input_width_90(type="text")
+						= ""
+						+jelect(
+							{
+								id: "select22",
+								name: "unit",
+							},
+							[
+								["м2", 1],
+								["м3"],
+								["пм"]
+							]
+						)(class="jelect_width_70")
+
+					.search__form-btn-search
+						button.button.button_width_100p(type="submit") Найти
+
+					.search__form-btn-create
+						button.button.button_width_100p(type="button") Создать объявление
+
+				form.search__form.ionTabs__item(data-name="radio" name="search-radio")
+
+					.search__form-input
+						input.input.input_width_100p(type="text" placeholder="Поиск")
+
+					.search__form-region
+						+jelect(
+							{
+								id: "select31",
+								name: "region",
+							},
+							[
+								["Регион", 1],
+								["Регион"],
+								["Регион"],
+								["Регион"],
+								["Регион"],
+								["Регион"]
+							]
+						)(class="jelect_width_100p")
+
+					.search__form-checkbox
+
+						input.chkb(
+							id="check31"
+							type="checkbox"
+							name="title"
+							value="check"
+							checked)
+						label(for="check31") Только в названии
+
+						input.chkb(
+							id="check32"
+							type="checkbox"
+							name="promedia"
+							value="check")
+						label(for="check32") Заказ через PRO Media
+
+					.search__form-price
+						span Цена от
+						= " "
+						input.input.input_width_90(type="text")
+						= " "
+						span до
+						= " "
+						input.input.input_width_90(type="text")
+						= ""
+						+jelect(
+							{
+								id: "select32",
+								name: "unit",
+							},
+							[
+								["м2", 1],
+								["м3"],
+								["пм"]
+							]
+						)(class="jelect_width_70")
+
+					.search__form-btn-search
+						button.button.button_width_100p(type="submit") Найти
+
+					.search__form-btn-create
+						button.button.button_width_100p(type="button") Создать объявление
+
+				form.search__form.ionTabs__item(data-name="press" name="search-press")
+
+					.search__form-input
+						input.input.input_width_100p(type="text" placeholder="Поиск")
+
+					.search__form-region
+						+jelect(
+							{
+								id: "select41",
+								name: "region",
+							},
+							[
+								["Регион", 1],
+								["Регион"],
+								["Регион"],
+								["Регион"],
+								["Регион"],
+								["Регион"]
+							]
+						)(class="jelect_width_100p")
+
+					.search__form-checkbox
+
+						input.chkb(
+							id="check41"
+							type="checkbox"
+							name="title"
+							value="check"
+							checked)
+						label(for="check41") Только в названии
+
+						input.chkb(
+							id="check42"
+							type="checkbox"
+							name="promedia"
+							value="check")
+						label(for="check42") Заказ через PRO Media
+
+					.search__form-price
+						span Цена от
+						= " "
+						input.input.input_width_90(type="text")
+						= " "
+						span до
+						= " "
+						input.input.input_width_90(type="text")
+						= ""
+						+jelect(
+							{
+								id: "select42",
+								name: "unit",
+							},
+							[
+								["м2", 1],
+								["м3"],
+								["пм"]
+							]
+						)(class="jelect_width_70")
+
+					.search__form-btn-search
+						button.button.button_width_100p(type="submit") Найти
+
+					.search__form-btn-create
+						button.button.button_width_100p(type="button") Создать объявление
+
+				form.search__form.ionTabs__item(data-name="tranzit" name="search-tranzit")
+
+					.search__form-input
+						input.input.input_width_100p(type="text" placeholder="Поиск")
+
+					.search__form-region
+						+jelect(
+							{
+								id: "select51",
+								name: "region",
+							},
+							[
+								["Регион", 1],
+								["Регион"],
+								["Регион"],
+								["Регион"],
+								["Регион"],
+								["Регион"]
+							]
+						)(class="jelect_width_100p")
+
+					.search__form-checkbox
+
+						input.chkb(
+							id="check51"
+							type="checkbox"
+							name="title"
+							value="check"
+							checked)
+						label(for="check51") Только в названии
+
+						input.chkb(
+							id="check52"
+							type="checkbox"
+							name="promedia"
+							value="check")
+						label(for="check52") Заказ через PRO Media
+
+					.search__form-price
+						span Цена от
+						= " "
+						input.input.input_width_90(type="text")
+						= " "
+						span до
+						= " "
+						input.input.input_width_90(type="text")
+						= ""
+						+jelect(
+							{
+								id: "select52",
+								name: "unit",
+							},
+							[
+								["м2", 1],
+								["м3"],
+								["пм"]
+							]
+						)(class="jelect_width_70")
+
+					.search__form-btn-search
+						button.button.button_width_100p(type="submit") Найти
+
+					.search__form-btn-create
+						button.button.button_width_100p(type="button") Создать объявление
+
+				form.search__form.ionTabs__item(data-name="internet" name="search-internet")
+
+					.search__form-input
+						input.input.input_width_100p(type="text" placeholder="Поиск")
+
+					.search__form-region
+						+jelect(
+							{
+								id: "select61",
+								name: "region",
+							},
+							[
+								["Регион", 1],
+								["Регион"],
+								["Регион"],
+								["Регион"],
+								["Регион"],
+								["Регион"]
+							]
+						)(class="jelect_width_100p")
+
+					.search__form-checkbox
+
+						input.chkb(
+							id="check61"
+							type="checkbox"
+							name="title"
+							value="check"
+							checked)
+						label(for="check61") Только в названии
+
+						input.chkb(
+							id="check62"
+							type="checkbox"
+							name="promedia"
+							value="check")
+						label(for="check62") Заказ через PRO Media
+
+					.search__form-price
+						span Цена от
+						= " "
+						input.input.input_width_90(type="text")
+						= " "
+						span до
+						= " "
+						input.input.input_width_90(type="text")
+						= ""
+						+jelect(
+							{
+								id: "select62",
+								name: "unit",
+							},
+							[
+								["м2", 1],
+								["м3"],
+								["пм"]
+							]
+						)(class="jelect_width_70")
+
+					.search__form-btn-search
+						button.button.button_width_100p(type="submit") Найти
+
+					.search__form-btn-create
+						button.button.button_width_100p(type="button") Создать объявление
+
+
+				.ionTabs__preloader
+
+			table.best-offers__table
+				thead
+					tr.best-offers__head-row
+						th.best-offers__head-cell.best-offers__head-cell_span_3(colspan=2)
+							input.chkb-text(id="check3" type="checkbox" name="title" value="check")
+							label(for="check3") Наименование
+
+						th.best-offers__head-cell
+							| Описание
+
+						th.best-offers__head-cell
+							input.chkb-text(id="check4" type="checkbox" name="company" value="check")
+							label(for="check4") Компания
+
+						th.best-offers__head-cell
+							input.chkb-text(id="check5" type="checkbox" name="price" value="check")
+							label(for="check5") Стоимость
+
+				tbody
+
+					tr.offer-row.offer-row_page_search
+						td
+							.offer-row__img(role="img")
+								img.offer-row__img-inner(
+									src="assets/images/content/advert.jpg"
+									alt="Изображение объекта")
+
+							.advert__sidebar-options-btn
+								button.button.button_color_green.button_type_icon.button_type_icon-home(type="button")
+								button.button.button_color_green.button_type_icon.button_type_icon-price(type="button")
+								button.button.button_color_green.button_type_icon.button_type_icon-add(type="button")
+
+						td
+							.offer-row__title Рекламный щит на «Рублевском шоссе»
+
+								.advert__content-date
+									span актуально до
+									= " "
+									time 23.01.2015
+
+						td
+							p.offer-row__text Тест маркетингового предлжения короткого, но информативного
+
+						td
+							a.offer-row__link.link(href=jv0) ООО «Италко»
+
+						td
+							.offer-row__price 1000 р./м2
+
+					tr.offer-row.offer-row_page_search
+						td
+							.offer-row__img(role="img")
+								img.offer-row__img-inner(
+									src="assets/images/content/advert.jpg"
+									alt="Изображение объекта")
+
+							.advert__sidebar-options-btn
+								button.button.button_color_green.button_type_icon.button_type_icon-home(type="button")
+								button.button.button_color_green.button_type_icon.button_type_icon-price(type="button")
+								button.button.button_color_green.button_type_icon.button_type_icon-add(type="button")
+
+						td
+							.offer-row__title Рекламный щит на «Рублевском шоссе»
+
+								.advert__content-date
+									span актуально до
+									= " "
+									time 23.01.2015
+
+						td
+							p.offer-row__text Тест маркетингового предлжения короткого, но информативного
+
+						td
+							a.offer-row__link.link(href=jv0) ООО «Италко»
+
+						td
+							.offer-row__price 1000 р./м2
+
+					tr.offer-row.offer-row_page_search
+						td
+							.offer-row__img(role="img")
+								img.offer-row__img-inner(
+									src="assets/images/content/advert.jpg"
+									alt="Изображение объекта")
+
+							.advert__sidebar-options-btn
+								button.button.button_color_green.button_type_icon.button_type_icon-home(type="button")
+								button.button.button_color_green.button_type_icon.button_type_icon-price(type="button")
+								button.button.button_color_green.button_type_icon.button_type_icon-add(type="button")
+
+						td
+							.offer-row__title Рекламный щит на «Рублевском шоссе»
+
+								.advert__content-date
+									span актуально до
+									= " "
+									time 23.01.2015
+
+						td
+							p.offer-row__text Тест маркетингового предлжения короткого, но информативного
+
+						td
+							a.offer-row__link.link(href=jv0) ООО «Италко»
+
+						td
+							.offer-row__price 1000 р./м2
+
+					tr.offer-row.offer-row_page_search
+						td
+							.offer-row__img(role="img")
+								img.offer-row__img-inner(
+									src="assets/images/content/advert.jpg"
+									alt="Изображение объекта")
+
+							.advert__sidebar-options-btn
+								button.button.button_color_green.button_type_icon.button_type_icon-home(type="button")
+								button.button.button_color_green.button_type_icon.button_type_icon-price(type="button")
+								button.button.button_color_green.button_type_icon.button_type_icon-add(type="button")
+
+						td
+							.offer-row__title Рекламный щит на «Рублевском шоссе»
+
+								.advert__content-date
+									span актуально до
+									= " "
+									time 23.01.2015
+
+						td
+							p.offer-row__text Тест маркетингового предлжения короткого, но информативного
+
+						td
+							a.offer-row__link.link(href=jv0) ООО «Италко»
+
+						td
+							.offer-row__price 1000 р./м2
+
+					tr.offer-row.offer-row_page_search
+						td
+							.offer-row__img(role="img")
+								img.offer-row__img-inner(
+									src="assets/images/content/advert.jpg"
+									alt="Изображение объекта")
+
+							.advert__sidebar-options-btn
+								button.button.button_color_green.button_type_icon.button_type_icon-home(type="button")
+								button.button.button_color_green.button_type_icon.button_type_icon-price(type="button")
+								button.button.button_color_green.button_type_icon.button_type_icon-add(type="button")
+
+						td
+							.offer-row__title Рекламный щит на «Рублевском шоссе»
+
+								.advert__content-date
+									span актуально до
+									= " "
+									time 23.01.2015
+
+						td
+							p.offer-row__text Тест маркетингового предлжения короткого, но информативного
+
+						td
+							a.offer-row__link.link(href=jv0) ООО «Италко»
+
+						td
+							.offer-row__price 1000 р./м2
+
+					tr.offer-row.offer-row_page_search
+						td
+							.offer-row__img(role="img")
+								img.offer-row__img-inner(
+									src="assets/images/content/advert.jpg"
+									alt="Изображение объекта")
+
+							.advert__sidebar-options-btn
+								button.button.button_color_green.button_type_icon.button_type_icon-home(type="button")
+								button.button.button_color_green.button_type_icon.button_type_icon-price(type="button")
+								button.button.button_color_green.button_type_icon.button_type_icon-add(type="button")
+
+						td
+							.offer-row__title Рекламный щит на «Рублевском шоссе»
+
+								.advert__content-date
+									span актуально до
+									= " "
+									time 23.01.2015
+
+						td
+							p.offer-row__text Тест маркетингового предлжения короткого, но информативного
+
+						td
+							a.offer-row__link.link(href=jv0) ООО «Италко»
+
+						td
+							.offer-row__price 1000 р./м2
+
+					tr.offer-row.offer-row_page_search
+						td
+							.offer-row__img(role="img")
+								img.offer-row__img-inner(
+									src="assets/images/content/advert.jpg"
+									alt="Изображение объекта")
+
+							.advert__sidebar-options-btn
+								button.button.button_color_green.button_type_icon.button_type_icon-home(type="button")
+								button.button.button_color_green.button_type_icon.button_type_icon-price(type="button")
+								button.button.button_color_green.button_type_icon.button_type_icon-add(type="button")
+
+						td
+							.offer-row__title Рекламный щит на «Рублевском шоссе»
+
+								.advert__content-date
+									span актуально до
+									= " "
+									time 23.01.2015
+
+						td
+							p.offer-row__text Тест маркетингового предлжения короткого, но информативного
+
+						td
+							a.offer-row__link.link(href=jv0) ООО «Италко»
+
+						td
+							.offer-row__price 1000 р./м2
+
+					tr.offer-row.offer-row_page_search
+						td
+							.offer-row__img(role="img")
+								img.offer-row__img-inner(
+									src="assets/images/content/advert.jpg"
+									alt="Изображение объекта")
+
+							.advert__sidebar-options-btn
+								button.button.button_color_green.button_type_icon.button_type_icon-home(type="button")
+								button.button.button_color_green.button_type_icon.button_type_icon-price(type="button")
+								button.button.button_color_green.button_type_icon.button_type_icon-add(type="button")
+
+						td
+							.offer-row__title Рекламный щит на «Рублевском шоссе»
+
+								.advert__content-date
+									span актуально до
+									= " "
+									time 23.01.2015
+
+						td
+							p.offer-row__text Тест маркетингового предлжения короткого, но информативного
+
+						td
+							a.offer-row__link.link(href=jv0) ООО «Италко»
+
+						td
+							.offer-row__price 1000 р./м2
+
+					tr.offer-row.offer-row_page_search
+						td
+							.offer-row__img(role="img")
+								img.offer-row__img-inner(
+									src="assets/images/content/advert.jpg"
+									alt="Изображение объекта")
+
+							.advert__sidebar-options-btn
+								button.button.button_color_green.button_type_icon.button_type_icon-home(type="button")
+								button.button.button_color_green.button_type_icon.button_type_icon-price(type="button")
+								button.button.button_color_green.button_type_icon.button_type_icon-add(type="button")
+
+						td
+							.offer-row__title Рекламный щит на «Рублевском шоссе»
+
+								.advert__content-date
+									span актуально до
+									= " "
+									time 23.01.2015
+
+						td
+							p.offer-row__text Тест маркетингового предлжения короткого, но информативного
+
+						td
+							a.offer-row__link.link(href=jv0) ООО «Италко»
+
+						td
+							.offer-row__price 1000 р./м2
+
+			input.chkb-text(id="check6" type="checkbox" name="more" value="check")
+			label(for="check6") Показать еще
+
+
