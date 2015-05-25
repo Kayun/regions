@@ -37,6 +37,17 @@ $(function () {
 		prevButton: '.new-advert__obj-left'
 	});
 
+	objSlider = new Swiper ('.card__img-slider', {
+		initialSlide: 0,
+		direction: 'horizontal',
+		speed: 500,
+		spaceBetween: 25,
+		slidesPerView: 3,
+		simulateTouch: false,
+		nextButton: '.card__img-next',
+		prevButton: '.card__img-prev'
+	});
+
 	// удаление слайдов
 
 	var $slideDel = $('.js-slide-del'),

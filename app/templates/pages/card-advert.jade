@@ -1,0 +1,124 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle ='Regions :: Card-advert';
+	- var headerBanner = true;
+	- var headerSearch = true;
+
+block content
+	include ../blocks/aside-advert
+	.wrapper
+
+		include ../blocks/result
+		include ../blocks/search
+
+		.card
+			h2.card__title Рекламный щит на рублевском шоссе
+
+			.card-wrapper
+				.card__img
+					.card__img-main
+						img(src="assets/images/card-img.jpg")
+
+						.card__img-offer
+
+					.card__img-slider.swiper-container
+
+						.swiper-wrapper
+
+							.swiper-slide
+								.card__img-slide
+									img(src="assets/images/content/object.jpg")
+
+							.swiper-slide
+								.card__img-slide
+									img(src="assets/images/content/object.jpg")
+
+							.swiper-slide
+								.card__img-slide
+									img(src="assets/images/content/object.jpg")
+
+							.swiper-slide
+								.card__img-slide
+									img(src="assets/images/content/object.jpg")
+
+							.swiper-slide
+								.card__img-slide
+									img(src="assets/images/content/object.jpg")
+
+							.swiper-slide
+								.card__img-slide
+									img(src="assets/images/content/object.jpg")
+
+						.card__img-prev
+						.card__img-next
+
+				.card__info
+
+					.card__item
+						.card__item-title Цена:
+						.card__item-text 1000р./день
+
+					.card__item
+						.card__item-title Актуально до:
+						.card__item-text 21.05.2015г
+
+					.card__item
+						.card__item-title Адрес:
+						.card__item-text: a.link.link_td_under(href=jv0) Москва, Рублевское шоссе, 13
+
+					.card__item
+						.card__item-title Приемущества:
+						.card__item-text подарок, скидка
+
+					.card__item
+						.card__item-title Маркетинговое предложение:
+						.card__item-text «Краткое содержание рекламного щита на рублевском шоссе»
+
+					.card__item
+						.card__item-title Продавец:
+						.card__item-text: a.link.link_td_under(href=jv0) ООО «Италко»
+
+					.card__item
+						.card__item-title Контактные данные:
+						.card__item-text 8 (495) 239-234-78, info@italco.ru
+
+					.card__social
+						a.card__icon.card__icon_type_tw(href=jv0)
+						a.card__icon.card__icon_type_fb(href=jv0)
+						a.card__icon.card__icon_type_mail(href="mailto: ///")
+
+				.card__discr
+					.card__discr-title Подробное описание:
+
+					p.card__discr-text
+						| Тактика выстраивания отношений с коммерсчекими агентами
+						| концентрирует социальный статус. Согласно ставшей уже
+						| классической работе Филипа Котлера, потребительская база
+						| сознательно экономит медиавес, используя опыт предыдущих
+						| кампаний. Психологическая среда повсеместно детерминирует
+						| формат события, используя опыт предыдущих кампаний.
+						| Размещение, конечно, синхронизирует коллективный социальный
+						| статус, опираясь на опыт западных коллег. Рекламное
+						| сообщество программирует повседневный презентационный
+						| материал.
+
+					p.card__discr-text
+						| Еще Траут показал, что позиционирование на рынке ускоряет
+						| конструктивный опрос. Мониторинг активности индуктивно
+						| определяет сублимированный бюджет на размещение. Охват
+						| аудитории, отбрасывая подробности, транслирует портрет
+						| потребителя. Практика однозначно показывает, что пак-шот
+						| трансформирует инвестиционный продукт, не считаясь с
+						| затратами. Как отмечает Майкл Мескон, цена клика индуктивно
+						| синхронизирует поведенческий таргетинг.
+
+					p.card__discr-text
+						| Рыночная информация спонтанно охватывает портрет потребителя.
+						| Отраслевой стандарт, суммируя приведенные примеры, нейтрализует
+						| побочный PR-эффект. По сути, концепция развития концентрирует
+						| креативный нишевый проект, осознав маркетинг как часть
+						| производства.
+
+
+
