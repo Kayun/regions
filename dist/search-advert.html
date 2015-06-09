@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Regions :: Seller</title>
+		<title>Regions :: Search</title>
 		<link href="assets/styles/common.css" rel="stylesheet">
 	</head>
 
@@ -77,267 +77,291 @@
 					</ul>
 					<div class="ionTabs__body">
 						<form data-name="tv" name="search-tv" class="search__form ionTabs__item">
-							<div class="search__form-input">
-								<input type="text" placeholder="Поиск" class="input input_width_100p">
-							</div>
-							<div class="search__form-region">
-								<div role="select" class="jelect jelect_width_100p">
-									<input type="text" id="select11" name="region" value="0" data-text="Регион" class="jelect-input" />
-									<div tabindex="0" role="button" class="jelect-current">Регион</div>
-									<ul class="jelect-options">
-										<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">Регион</li>
-										<li data-val='1' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='2' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='3' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='4' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='5' tabindex="0" role="option" class="jelect-option">Регион</li>
-									</ul>
+							<div class="search-wrap">
+								<div class="search__form-input">
+									<input type="text" placeholder="Поиск" class="input input_width_100p">
 								</div>
-							</div>
-							<div class="search__form-checkbox">
-								<input id="check11" type="checkbox" name="title" value="check" checked class="chkb">
-								<label for="check11">Только в названии</label>
-								<input id="check12" type="checkbox" name="promedia" value="check" class="chkb">
-								<label for="check12">Заказ через PRO Media</label>
-							</div>
-							<div class="search__form-price"><span>Цена от</span>
-								<input type="text" class="input input_width_90"> <span>до</span>
-								<input type="text" class="input input_width_90">
-								<div role="select" class="jelect jelect_width_70">
-									<input type="text" id="select12" name="unit" value="0" data-text="м2" class="jelect-input" />
-									<div tabindex="0" role="button" class="jelect-current">м2</div>
-									<ul class="jelect-options">
-										<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">м2</li>
-										<li data-val='1' tabindex="0" role="option" class="jelect-option">м3</li>
-										<li data-val='2' tabindex="0" role="option" class="jelect-option">пм</li>
-									</ul>
+								<div class="search__form-region">
+									<div role="select" class="jelect jelect_width_100p">
+										<input type="text" id="select11" name="region" value="0" data-text="Регион" class="jelect-input" />
+										<div tabindex="0" role="button" class="jelect-current">Регион</div>
+										<ul class="jelect-options">
+											<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">Регион</li>
+											<li data-val='1' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='2' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='3' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='4' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='5' tabindex="0" role="option" class="jelect-option">Регион</li>
+										</ul>
+									</div>
 								</div>
-							</div>
-							<div class="search__form-btn-search">
-								<button type="submit" class="button button_width_100p">Найти</button>
-							</div>
-							<div class="search__form-btn-create">
-								<button type="button" class="button button_width_100p">Создать объявление</button>
+								<div class="search__form-checkbox">
+									<input id="check11" type="checkbox" name="title" value="check" checked class="chkb">
+									<label for="check11">Только в названии</label>
+									<input id="check12" type="checkbox" name="promedia" value="check" class="chkb">
+									<label for="check12">Заказ через PRO Media</label>
+								</div>
+								<div class="search__form-price">
+									<div class="search__form-price-wrap"><span>Цена от</span>
+										<input type="text" class="input input_width_90"> <span>до</span>
+										<input type="text" class="input input_width_90">
+										<div role="select" class="jelect jelect_width_70">
+											<input type="text" id="select12" name="unit" value="0" data-text="м2" class="jelect-input" />
+											<div tabindex="0" role="button" class="jelect-current">м2</div>
+											<ul class="jelect-options">
+												<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">м2</li>
+												<li data-val='1' tabindex="0" role="option" class="jelect-option">м3</li>
+												<li data-val='2' tabindex="0" role="option" class="jelect-option">пм</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="search__form-btn-search">
+									<button type="submit" class="button button_width_100p">Найти</button>
+								</div>
+								<div class="search__form-btn-create">
+									<button type="button" class="button button_width_100p">Создать объявление</button>
+								</div>
 							</div>
 						</form>
 						<form data-name="outdoor" name="search-outdoor" class="search__form ionTabs__item">
-							<div class="search__form-input">
-								<input type="text" placeholder="Поиск" class="input input_width_100p">
-							</div>
-							<div class="search__form-region">
-								<div role="select" class="jelect jelect_width_100p">
-									<input type="text" id="select21" name="region" value="0" data-text="Регион" class="jelect-input" />
-									<div tabindex="0" role="button" class="jelect-current">Регион</div>
-									<ul class="jelect-options">
-										<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">Регион</li>
-										<li data-val='1' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='2' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='3' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='4' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='5' tabindex="0" role="option" class="jelect-option">Регион</li>
-									</ul>
+							<div class="search-wrap">
+								<div class="search__form-input">
+									<input type="text" placeholder="Поиск" class="input input_width_100p">
 								</div>
-							</div>
-							<div class="search__form-checkbox">
-								<input id="check21" type="checkbox" name="title" value="check" checked class="chkb">
-								<label for="check21">Только в названии</label>
-								<input id="check22" type="checkbox" name="promedia" value="check" class="chkb">
-								<label for="check22">Заказ через PRO Media</label>
-							</div>
-							<div class="search__form-price"><span>Цена от</span>
-								<input type="text" class="input input_width_90"> <span>до</span>
-								<input type="text" class="input input_width_90">
-								<div role="select" class="jelect jelect_width_70">
-									<input type="text" id="select22" name="unit" value="0" data-text="м2" class="jelect-input" />
-									<div tabindex="0" role="button" class="jelect-current">м2</div>
-									<ul class="jelect-options">
-										<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">м2</li>
-										<li data-val='1' tabindex="0" role="option" class="jelect-option">м3</li>
-										<li data-val='2' tabindex="0" role="option" class="jelect-option">пм</li>
-									</ul>
+								<div class="search__form-region">
+									<div role="select" class="jelect jelect_width_100p">
+										<input type="text" id="select21" name="region" value="0" data-text="Регион" class="jelect-input" />
+										<div tabindex="0" role="button" class="jelect-current">Регион</div>
+										<ul class="jelect-options">
+											<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">Регион</li>
+											<li data-val='1' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='2' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='3' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='4' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='5' tabindex="0" role="option" class="jelect-option">Регион</li>
+										</ul>
+									</div>
 								</div>
-							</div>
-							<div class="search__form-btn-search">
-								<button type="submit" class="button button_width_100p">Найти</button>
-							</div>
-							<div class="search__form-btn-create">
-								<button type="button" class="button button_width_100p">Создать объявление</button>
+								<div class="search__form-checkbox">
+									<input id="check21" type="checkbox" name="title" value="check" checked class="chkb">
+									<label for="check21">Только в названии</label>
+									<input id="check22" type="checkbox" name="promedia" value="check" class="chkb">
+									<label for="check22">Заказ через PRO Media</label>
+								</div>
+								<div class="search__form-price">
+									<div class="search__form-price-wrap"><span>Цена от</span>
+										<input type="text" class="input input_width_90"> <span>до</span>
+										<input type="text" class="input input_width_90">
+										<div role="select" class="jelect jelect_width_70">
+											<input type="text" id="select22" name="unit" value="0" data-text="м2" class="jelect-input" />
+											<div tabindex="0" role="button" class="jelect-current">м2</div>
+											<ul class="jelect-options">
+												<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">м2</li>
+												<li data-val='1' tabindex="0" role="option" class="jelect-option">м3</li>
+												<li data-val='2' tabindex="0" role="option" class="jelect-option">пм</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="search__form-btn-search">
+									<button type="submit" class="button button_width_100p">Найти</button>
+								</div>
+								<div class="search__form-btn-create">
+									<button type="button" class="button button_width_100p">Создать объявление</button>
+								</div>
 							</div>
 						</form>
 						<form data-name="radio" name="search-radio" class="search__form ionTabs__item">
-							<div class="search__form-input">
-								<input type="text" placeholder="Поиск" class="input input_width_100p">
-							</div>
-							<div class="search__form-region">
-								<div role="select" class="jelect jelect_width_100p">
-									<input type="text" id="select31" name="region" value="0" data-text="Регион" class="jelect-input" />
-									<div tabindex="0" role="button" class="jelect-current">Регион</div>
-									<ul class="jelect-options">
-										<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">Регион</li>
-										<li data-val='1' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='2' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='3' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='4' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='5' tabindex="0" role="option" class="jelect-option">Регион</li>
-									</ul>
+							<div class="search-wrap">
+								<div class="search__form-input">
+									<input type="text" placeholder="Поиск" class="input input_width_100p">
 								</div>
-							</div>
-							<div class="search__form-checkbox">
-								<input id="check31" type="checkbox" name="title" value="check" checked class="chkb">
-								<label for="check31">Только в названии</label>
-								<input id="check32" type="checkbox" name="promedia" value="check" class="chkb">
-								<label for="check32">Заказ через PRO Media</label>
-							</div>
-							<div class="search__form-price"><span>Цена от</span>
-								<input type="text" class="input input_width_90"> <span>до</span>
-								<input type="text" class="input input_width_90">
-								<div role="select" class="jelect jelect_width_70">
-									<input type="text" id="select32" name="unit" value="0" data-text="м2" class="jelect-input" />
-									<div tabindex="0" role="button" class="jelect-current">м2</div>
-									<ul class="jelect-options">
-										<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">м2</li>
-										<li data-val='1' tabindex="0" role="option" class="jelect-option">м3</li>
-										<li data-val='2' tabindex="0" role="option" class="jelect-option">пм</li>
-									</ul>
+								<div class="search__form-region">
+									<div role="select" class="jelect jelect_width_100p">
+										<input type="text" id="select31" name="region" value="0" data-text="Регион" class="jelect-input" />
+										<div tabindex="0" role="button" class="jelect-current">Регион</div>
+										<ul class="jelect-options">
+											<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">Регион</li>
+											<li data-val='1' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='2' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='3' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='4' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='5' tabindex="0" role="option" class="jelect-option">Регион</li>
+										</ul>
+									</div>
 								</div>
-							</div>
-							<div class="search__form-btn-search">
-								<button type="submit" class="button button_width_100p">Найти</button>
-							</div>
-							<div class="search__form-btn-create">
-								<button type="button" class="button button_width_100p">Создать объявление</button>
+								<div class="search__form-checkbox">
+									<input id="check31" type="checkbox" name="title" value="check" checked class="chkb">
+									<label for="check31">Только в названии</label>
+									<input id="check32" type="checkbox" name="promedia" value="check" class="chkb">
+									<label for="check32">Заказ через PRO Media</label>
+								</div>
+								<div class="search__form-price">
+									<div class="search__form-price-wrap"><span>Цена от</span>
+										<input type="text" class="input input_width_90"> <span>до</span>
+										<input type="text" class="input input_width_90">
+										<div role="select" class="jelect jelect_width_70">
+											<input type="text" id="select32" name="unit" value="0" data-text="м2" class="jelect-input" />
+											<div tabindex="0" role="button" class="jelect-current">м2</div>
+											<ul class="jelect-options">
+												<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">м2</li>
+												<li data-val='1' tabindex="0" role="option" class="jelect-option">м3</li>
+												<li data-val='2' tabindex="0" role="option" class="jelect-option">пм</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="search__form-btn-search">
+									<button type="submit" class="button button_width_100p">Найти</button>
+								</div>
+								<div class="search__form-btn-create">
+									<button type="button" class="button button_width_100p">Создать объявление</button>
+								</div>
 							</div>
 						</form>
 						<form data-name="press" name="search-press" class="search__form ionTabs__item">
-							<div class="search__form-input">
-								<input type="text" placeholder="Поиск" class="input input_width_100p">
-							</div>
-							<div class="search__form-region">
-								<div role="select" class="jelect jelect_width_100p">
-									<input type="text" id="select41" name="region" value="0" data-text="Регион" class="jelect-input" />
-									<div tabindex="0" role="button" class="jelect-current">Регион</div>
-									<ul class="jelect-options">
-										<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">Регион</li>
-										<li data-val='1' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='2' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='3' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='4' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='5' tabindex="0" role="option" class="jelect-option">Регион</li>
-									</ul>
+							<div class="search-wrap">
+								<div class="search__form-input">
+									<input type="text" placeholder="Поиск" class="input input_width_100p">
 								</div>
-							</div>
-							<div class="search__form-checkbox">
-								<input id="check41" type="checkbox" name="title" value="check" checked class="chkb">
-								<label for="check41">Только в названии</label>
-								<input id="check42" type="checkbox" name="promedia" value="check" class="chkb">
-								<label for="check42">Заказ через PRO Media</label>
-							</div>
-							<div class="search__form-price"><span>Цена от</span>
-								<input type="text" class="input input_width_90"> <span>до</span>
-								<input type="text" class="input input_width_90">
-								<div role="select" class="jelect jelect_width_70">
-									<input type="text" id="select42" name="unit" value="0" data-text="м2" class="jelect-input" />
-									<div tabindex="0" role="button" class="jelect-current">м2</div>
-									<ul class="jelect-options">
-										<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">м2</li>
-										<li data-val='1' tabindex="0" role="option" class="jelect-option">м3</li>
-										<li data-val='2' tabindex="0" role="option" class="jelect-option">пм</li>
-									</ul>
+								<div class="search__form-region">
+									<div role="select" class="jelect jelect_width_100p">
+										<input type="text" id="select41" name="region" value="0" data-text="Регион" class="jelect-input" />
+										<div tabindex="0" role="button" class="jelect-current">Регион</div>
+										<ul class="jelect-options">
+											<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">Регион</li>
+											<li data-val='1' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='2' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='3' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='4' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='5' tabindex="0" role="option" class="jelect-option">Регион</li>
+										</ul>
+									</div>
 								</div>
-							</div>
-							<div class="search__form-btn-search">
-								<button type="submit" class="button button_width_100p">Найти</button>
-							</div>
-							<div class="search__form-btn-create">
-								<button type="button" class="button button_width_100p">Создать объявление</button>
+								<div class="search__form-checkbox">
+									<input id="check41" type="checkbox" name="title" value="check" checked class="chkb">
+									<label for="check41">Только в названии</label>
+									<input id="check42" type="checkbox" name="promedia" value="check" class="chkb">
+									<label for="check42">Заказ через PRO Media</label>
+								</div>
+								<div class="search__form-price">
+									<div class="search__form-price-wrap"><span>Цена от</span>
+										<input type="text" class="input input_width_90"> <span>до</span>
+										<input type="text" class="input input_width_90">
+										<div role="select" class="jelect jelect_width_70">
+											<input type="text" id="select42" name="unit" value="0" data-text="м2" class="jelect-input" />
+											<div tabindex="0" role="button" class="jelect-current">м2</div>
+											<ul class="jelect-options">
+												<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">м2</li>
+												<li data-val='1' tabindex="0" role="option" class="jelect-option">м3</li>
+												<li data-val='2' tabindex="0" role="option" class="jelect-option">пм</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="search__form-btn-search">
+									<button type="submit" class="button button_width_100p">Найти</button>
+								</div>
+								<div class="search__form-btn-create">
+									<button type="button" class="button button_width_100p">Создать объявление</button>
+								</div>
 							</div>
 						</form>
 						<form data-name="tranzit" name="search-tranzit" class="search__form ionTabs__item">
-							<div class="search__form-input">
-								<input type="text" placeholder="Поиск" class="input input_width_100p">
-							</div>
-							<div class="search__form-region">
-								<div role="select" class="jelect jelect_width_100p">
-									<input type="text" id="select51" name="region" value="0" data-text="Регион" class="jelect-input" />
-									<div tabindex="0" role="button" class="jelect-current">Регион</div>
-									<ul class="jelect-options">
-										<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">Регион</li>
-										<li data-val='1' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='2' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='3' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='4' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='5' tabindex="0" role="option" class="jelect-option">Регион</li>
-									</ul>
+							<div class="search-wrap">
+								<div class="search__form-input">
+									<input type="text" placeholder="Поиск" class="input input_width_100p">
 								</div>
-							</div>
-							<div class="search__form-checkbox">
-								<input id="check51" type="checkbox" name="title" value="check" checked class="chkb">
-								<label for="check51">Только в названии</label>
-								<input id="check52" type="checkbox" name="promedia" value="check" class="chkb">
-								<label for="check52">Заказ через PRO Media</label>
-							</div>
-							<div class="search__form-price"><span>Цена от</span>
-								<input type="text" class="input input_width_90"> <span>до</span>
-								<input type="text" class="input input_width_90">
-								<div role="select" class="jelect jelect_width_70">
-									<input type="text" id="select52" name="unit" value="0" data-text="м2" class="jelect-input" />
-									<div tabindex="0" role="button" class="jelect-current">м2</div>
-									<ul class="jelect-options">
-										<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">м2</li>
-										<li data-val='1' tabindex="0" role="option" class="jelect-option">м3</li>
-										<li data-val='2' tabindex="0" role="option" class="jelect-option">пм</li>
-									</ul>
+								<div class="search__form-region">
+									<div role="select" class="jelect jelect_width_100p">
+										<input type="text" id="select51" name="region" value="0" data-text="Регион" class="jelect-input" />
+										<div tabindex="0" role="button" class="jelect-current">Регион</div>
+										<ul class="jelect-options">
+											<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">Регион</li>
+											<li data-val='1' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='2' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='3' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='4' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='5' tabindex="0" role="option" class="jelect-option">Регион</li>
+										</ul>
+									</div>
 								</div>
-							</div>
-							<div class="search__form-btn-search">
-								<button type="submit" class="button button_width_100p">Найти</button>
-							</div>
-							<div class="search__form-btn-create">
-								<button type="button" class="button button_width_100p">Создать объявление</button>
+								<div class="search__form-checkbox">
+									<input id="check51" type="checkbox" name="title" value="check" checked class="chkb">
+									<label for="check51">Только в названии</label>
+									<input id="check52" type="checkbox" name="promedia" value="check" class="chkb">
+									<label for="check52">Заказ через PRO Media</label>
+								</div>
+								<div class="search__form-price">
+									<div class="search__form-price-wrap"><span>Цена от</span>
+										<input type="text" class="input input_width_90"> <span>до</span>
+										<input type="text" class="input input_width_90">
+										<div role="select" class="jelect jelect_width_70">
+											<input type="text" id="select52" name="unit" value="0" data-text="м2" class="jelect-input" />
+											<div tabindex="0" role="button" class="jelect-current">м2</div>
+											<ul class="jelect-options">
+												<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">м2</li>
+												<li data-val='1' tabindex="0" role="option" class="jelect-option">м3</li>
+												<li data-val='2' tabindex="0" role="option" class="jelect-option">пм</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="search__form-btn-search">
+									<button type="submit" class="button button_width_100p">Найти</button>
+								</div>
+								<div class="search__form-btn-create">
+									<button type="button" class="button button_width_100p">Создать объявление</button>
+								</div>
 							</div>
 						</form>
 						<form data-name="internet" name="search-internet" class="search__form ionTabs__item">
-							<div class="search__form-input">
-								<input type="text" placeholder="Поиск" class="input input_width_100p">
-							</div>
-							<div class="search__form-region">
-								<div role="select" class="jelect jelect_width_100p">
-									<input type="text" id="select61" name="region" value="0" data-text="Регион" class="jelect-input" />
-									<div tabindex="0" role="button" class="jelect-current">Регион</div>
-									<ul class="jelect-options">
-										<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">Регион</li>
-										<li data-val='1' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='2' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='3' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='4' tabindex="0" role="option" class="jelect-option">Регион</li>
-										<li data-val='5' tabindex="0" role="option" class="jelect-option">Регион</li>
-									</ul>
+							<div class="search-wrap">
+								<div class="search__form-input">
+									<input type="text" placeholder="Поиск" class="input input_width_100p">
 								</div>
-							</div>
-							<div class="search__form-checkbox">
-								<input id="check61" type="checkbox" name="title" value="check" checked class="chkb">
-								<label for="check61">Только в названии</label>
-								<input id="check62" type="checkbox" name="promedia" value="check" class="chkb">
-								<label for="check62">Заказ через PRO Media</label>
-							</div>
-							<div class="search__form-price"><span>Цена от</span>
-								<input type="text" class="input input_width_90"> <span>до</span>
-								<input type="text" class="input input_width_90">
-								<div role="select" class="jelect jelect_width_70">
-									<input type="text" id="select62" name="unit" value="0" data-text="м2" class="jelect-input" />
-									<div tabindex="0" role="button" class="jelect-current">м2</div>
-									<ul class="jelect-options">
-										<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">м2</li>
-										<li data-val='1' tabindex="0" role="option" class="jelect-option">м3</li>
-										<li data-val='2' tabindex="0" role="option" class="jelect-option">пм</li>
-									</ul>
+								<div class="search__form-region">
+									<div role="select" class="jelect jelect_width_100p">
+										<input type="text" id="select61" name="region" value="0" data-text="Регион" class="jelect-input" />
+										<div tabindex="0" role="button" class="jelect-current">Регион</div>
+										<ul class="jelect-options">
+											<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">Регион</li>
+											<li data-val='1' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='2' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='3' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='4' tabindex="0" role="option" class="jelect-option">Регион</li>
+											<li data-val='5' tabindex="0" role="option" class="jelect-option">Регион</li>
+										</ul>
+									</div>
 								</div>
-							</div>
-							<div class="search__form-btn-search">
-								<button type="submit" class="button button_width_100p">Найти</button>
-							</div>
-							<div class="search__form-btn-create">
-								<button type="button" class="button button_width_100p">Создать объявление</button>
+								<div class="search__form-checkbox">
+									<input id="check61" type="checkbox" name="title" value="check" checked class="chkb">
+									<label for="check61">Только в названии</label>
+									<input id="check62" type="checkbox" name="promedia" value="check" class="chkb">
+									<label for="check62">Заказ через PRO Media</label>
+								</div>
+								<div class="search__form-price">
+									<div class="search__form-price-wrap"><span>Цена от</span>
+										<input type="text" class="input input_width_90"> <span>до</span>
+										<input type="text" class="input input_width_90">
+										<div role="select" class="jelect jelect_width_70">
+											<input type="text" id="select62" name="unit" value="0" data-text="м2" class="jelect-input" />
+											<div tabindex="0" role="button" class="jelect-current">м2</div>
+											<ul class="jelect-options">
+												<li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">м2</li>
+												<li data-val='1' tabindex="0" role="option" class="jelect-option">м3</li>
+												<li data-val='2' tabindex="0" role="option" class="jelect-option">пм</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="search__form-btn-search">
+									<button type="submit" class="button button_width_100p">Найти</button>
+								</div>
+								<div class="search__form-btn-create">
+									<button type="button" class="button button_width_100p">Создать объявление</button>
+								</div>
 							</div>
 						</form>
 						<div class="ionTabs__preloader"></div>

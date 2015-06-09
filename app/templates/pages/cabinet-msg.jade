@@ -2,20 +2,11 @@ extends ../layouts/default
 
 mixin msg(obj)
 	- if (obj.disable)
-		button.cabinet__msg-item(type="button" disabled)
+		button.cabinet__msg-item.msg-disabled(type="button")
 
 			.cabinet__msg-title= obj.title
 			.cabinet__msg-autor= obj.autor
 			.cabinet__msg-text= obj.text
-
-			.cabinet__msg-read
-				.button.button_color_green.button_size_small прочитать
-
-			.cabinet__msg-answer
-				.button.button_size_small ответить
-
-			.cabinet__msg-del
-				.button.button_color_red.button_size_small удалить
 
 	- else
 		button.cabinet__msg-item(type="button")

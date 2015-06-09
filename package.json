@@ -1,23 +1,17 @@
 {
-  "name": "project-template",
-  "version": "0.8.5",
-  "title": "Project Template",
-  "description": "A template for a quick start.",
+  "name": "24ttl",
+  "version": "1.0.0",
+  "title": "24ttl",
+  "description": "",
   "keywords": [],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/CSSSR/csssr-project-template.git"
-  },
+
   "author": {
-    "name": "felixexter",
-    "url": "https://github.com/felixexter"
+    "name": "Kayun Artyom",
+    "url": "https://github.com/kayun",
+    "e-mail": "kayun.artem@gmail.com"
   },
-  "copyright": "©Kayun",
-  "bugs": {
-    "url": "https://github.com/CSSSR/csssr-project-template/issues/",
-    "email": "dev@csssr.com"
-  },
-  "homepage": "https://github.com/CSSSR/csssr-project-template/",
+  "copyright": "©kayun",
+
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -25,7 +19,7 @@
     "browser-sync": "^1.9.1",
     "coffee-script": "^1.8.0",
     "del": "^0.1.3",
-    "gulp": "3.8.8",
+    "gulp": "3.8.11",
     "gulp-autoprefixer": "0.0.8",
     "gulp-bump": "^0.1.11",
     "gulp-changed": "^1.1.1",

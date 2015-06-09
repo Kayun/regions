@@ -60,8 +60,8 @@ mixin contact(obj)
 				a.contact__phone(href="tel:" + obj.tel)= obj.tel
 
 			- if (obj.buttons)
-				button.contact__edit(type="button")
-					.button Редактировать
+				.contact__edit
+					button.button(type="button") Редактировать
 
-				button.contact__del(type="button")
-					.button.button_color_orange Удалить
+				.contact__del
+					button.button.button_color_orange(type="button") Удалить

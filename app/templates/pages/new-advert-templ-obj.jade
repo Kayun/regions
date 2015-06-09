@@ -1,7 +1,7 @@
 extends ../layouts/default
 
 block head
-	- var pageTitle ='Regions :: Seller';
+	- var pageTitle ='Regions :: New-advert';
 	- var headerBanner = true;
 
 block content
@@ -10,13 +10,13 @@ block content
 		h1.title__h1 Новое объявление
 
 		.new-advert__prog
-			.new-advert__prog-item.new-advert__prog-item_state_active
+			.new-advert__prog-item.new-advert__prog-item_state_active.js-advert-prog
 				| Информация об объекте
 
-			.new-advert__prog-item.new-advert__prog-item_state_active
+			.new-advert__prog-item.js-advert-prog
 				| Контактные данные
 
-			.new-advert__prog-item
+			.new-advert__prog-item.js-advert-prog
 				| Готово
 
 		form.container(name="object")

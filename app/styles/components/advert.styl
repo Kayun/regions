@@ -27,8 +27,10 @@
 	&:hover
 		border-color #39b54a
 
-		& .advert__edit-btn
-			opacity 1
+		.advert__edit-btn
+
+			.button
+				opacity 1
 
 		&:before
 			opacity 0
@@ -52,6 +54,7 @@
 
 	&__sidebar-options-btn
 		margin-bottom 6px
+		display table
 		font-size 0
 
 		& .button + .button
@@ -101,8 +104,14 @@
 		position absolute
 		right 10px
 		bottom 10px
-		opacity 0
-		transition opacity .3s ease
 
-		& .button + .button
+		.button
+			opacity 0
+			transition opacity .3s ease
+			will-change opacity
+
+			&_size_medium
+				opacity 1 !important
+
+		.button + .button
 			margin-left 5px

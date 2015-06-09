@@ -10,7 +10,7 @@ $(function () {
 
 	// слайдер на главной странице
 
-	var mainSlider, objSlider;
+	var mainSlider, objSlider, cardSlider;
 
 	mainSlider = new Swiper ('.main-slider', {
 		direction: 'horizontal',
@@ -37,7 +37,7 @@ $(function () {
 		prevButton: '.new-advert__obj-left'
 	});
 
-	objSlider = new Swiper ('.card__img-slider', {
+	cardSlider = new Swiper ('.card__img-slider', {
 		initialSlide: 0,
 		direction: 'horizontal',
 		speed: 500,
@@ -117,11 +117,22 @@ $(function () {
 			railpadding: {
 				top: 20,
 				right: 2,
-				bottom: 20,
+				bottom: 65,
 				left: 0
 			}
 		});
 	});
+
+	// прогрессбар на странице "новое объявление"
+
+	var $progItem = $('.js-advert-prog'),
+		progItemActiveClass = 'new-advert__prog-item_state_active';
+
+	$progItem.on('click', function () {
+		$(this).siblings().removeClass(progItemActiveClass);
+		$(this).addClass(progItemActiveClass);
+	});
+
 
 	// табы для личного кабинета
 

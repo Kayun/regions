@@ -176,6 +176,12 @@
 			transition border-color .3s ease
 			cursor default
 
+			&.msg-disabled
+				cursor pointer
+
+				*
+					color #989898
+
 			&:before
 				position absolute
 				z-index 1
@@ -230,7 +236,7 @@
 		&-text
 			padding 29px 15px 30px
 			height 100%
-			width 344px
+			width 335px
 			font-size 13px
 			vertical-align top
 			display inline-block
