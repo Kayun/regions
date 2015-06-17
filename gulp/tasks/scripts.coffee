@@ -15,8 +15,12 @@ gulp.task 'scripts', ->
 			'libs/ion.tabs/js/ion-tabs/ion.tabs.js'
 			'libs/jelect/jquery.jelect.js'
 			'libs/jquery-ui/ui/minified/core.min.js'
+			'libs/jquery-ui/ui/minified/widget.min.js'
+			'libs/jquery-ui/ui/minified/position.min.js'
+			'libs/jquery-ui/ui/minified/menu.min.js'
 			'libs/jquery-ui/ui/minified/datepicker.min.js'
 			'libs/jquery-ui/ui/minified/i18n/datepicker-ru.min.js'
+			'libs/jquery-ui/ui/minified/autocomplete.min.js'
 			'common.js'
 		],
 			cwd: 'app/scripts'

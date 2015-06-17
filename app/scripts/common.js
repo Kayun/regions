@@ -4,6 +4,45 @@ $(function () {
 
 	menuCount();
 
+	var $searchInput = $('.js-input-search'),
+		searchDictionary = [];
+
+	$.getJSON('../../data/regions.json', function (data) {
+		searchDictionary = data.regions;
+
+		$searchInput.each(function () {
+			var $this = $(this);
+			$this.autocomplete({
+				source: searchDictionary,
+				appendTo: $this.parent(),
+				minLength: 2,
+				create: function () {
+					$this.next().niceScroll({
+						cursorcolor: '#39b54a',
+						cursorwidth: '12px',
+						cursorborderradius: '4px',
+						cursorminheight: 86,
+						autohidemode: 'cursor',
+						railoffset: true,
+						railpadding: {
+							top: 5,
+							right: 2,
+							bottom: 10,
+							left: 0
+						}
+					});
+				},
+				open: function () {
+					$this.addClass('input_regions');
+				},
+				close: function () {
+					$this.removeClass('input_regions');
+				}
+			});
+		})
+
+	});
+
 	// календарь
 
 	var $calendar = $('#calendar')
