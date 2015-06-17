@@ -231,4 +231,18 @@ $(function () {
 		});
 	});
 
+	// переключение шаблонов
+
+	var $templ = $('.js-templ-item'),
+		$templHeader = $('.new-advert__templ-header'),
+		templActiveClass = 'new-advert__templ-item_state_active';
+
+	$templ.each(function () {
+		var $this = $(this);
+		$this.on('click', function () {
+			$this.addClass(templActiveClass);
+			$this.siblings().not($templHeader).removeClass(templActiveClass);
+		});
+	});
+
 });
