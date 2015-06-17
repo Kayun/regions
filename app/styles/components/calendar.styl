@@ -1,0 +1,109 @@
+#ui-datepicker-div
+	width 470px
+	font-family beausans-l
+	background-color #fff
+	border-radius 0 0 7px 7px
+	box-shadow 6px 9px 10px rgba(0, 0, 0, .5)
+
+
+.ui-datepicker
+
+	&-header
+		position relative
+		margin 0 auto
+		margin-top 10px
+		width 450px
+		background-color $bg-green
+		border-radius 7px
+
+	&-next
+	&-prev
+		position absolute
+		top 5px
+		width 30px
+		height 30px
+		display inline-block
+		border 1px solid #fff
+		border-radius 7px
+		cursor pointer
+		transition background-color .3s ease
+
+		&:hover
+			background-color rgba(255, 255, 255, .5)
+
+		&:before
+			position absolute
+			top 6px
+			width 15px
+			height 15px
+			content ''
+			border-top 1px solid #fff
+			border-right 1px solid #fff
+
+	&-next
+		right 5px
+
+		&:before
+			right 10px
+			transform rotate(45deg)
+
+	&-prev
+		left 5px
+
+		&:before
+			left 10px
+			transform rotate(-135deg)
+
+	&-title
+		color #fff
+		text-align center
+		line-height 40px
+
+	&-calendar
+		width 100%
+		text-align center
+		border-spacing 15px
+		border-collapse separate
+
+		thead
+			color $bg-green
+
+		tbody
+
+			td
+				height 30px
+				border 1px solid #73a133
+				border-radius 5px
+				cursor pointer
+				line-height 30px
+				transition background-color .3s ease
+
+				&:hover
+					background-color $bg-green
+
+					a
+						color #fff
+
+				a
+					padding-top 2px
+					width 100%
+					display inline-block
+					color #73a133
+					text-decoration none
+					transition color .3s ease
+
+				&.ui-datepicker-current-day
+					background #8dc63f
+
+					a
+						color #fff
+
+				&.ui-datepicker-other-month
+					border-color rgb(206, 209, 219)
+					cursor default
+
+					&:hover
+						background-color $trn
+
+					span
+						color rgb(206, 209, 219)

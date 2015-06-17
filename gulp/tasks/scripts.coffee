@@ -14,6 +14,9 @@ gulp.task 'scripts', ->
 			'libs/jquery.nicescroll/jquery.nicescroll.js'
 			'libs/ion.tabs/js/ion-tabs/ion.tabs.js'
 			'libs/jelect/jquery.jelect.js'
+			'libs/jquery-ui/ui/minified/core.min.js'
+			'libs/jquery-ui/ui/minified/datepicker.min.js'
+			'libs/jquery-ui/ui/minified/i18n/datepicker-ru.min.js'
 			'common.js'
 		],
 			cwd: 'app/scripts'

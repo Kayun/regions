@@ -6,7 +6,8 @@
     "Swiper": "https://github.com/nolimits4web/Swiper.git#~3.0.6",
     "jquery.nicescroll": "https://github.com/inuyaksa/jquery.nicescroll.git#~3.6.0",
     "ion.tabs": "https://github.com/IonDen/ion.tabs.git#~1.0.2",
-    "jelect": "https://github.com/CSSSR/jelect.git#~0.1.0"
+    "jelect": "https://github.com/CSSSR/jelect.git#~0.1.0",
+    "jquery-ui": "~1.11.4"
   },
   "resolutions": {
     "jquery": ">=2.1.3"

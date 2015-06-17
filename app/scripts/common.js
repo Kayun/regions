@@ -4,6 +4,26 @@ $(function () {
 
 	menuCount();
 
+	// календарь
+
+	var $calendar = $('#calendar')
+
+	$calendar.datepicker({
+		dateFormat: 'd MM, yy',
+		firstDay: 1,
+		showOtherMonths: true,
+		selectOtherMonths: false,
+		nextText: '',
+		prevText: '',
+		showAnim: 'slideDown',
+		beforeShow: function () {
+			$calendar.addClass('input_calendar')
+		},
+		onClose: function () {
+			$calendar.removeClass('input_calendar')
+		}
+	});
+
 	// кастомные селекты
 
 	$('.jelect').jelect();
