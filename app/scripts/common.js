@@ -4,6 +4,30 @@ $(function () {
 
 	menuCount();
 
+	// информационный попап
+
+	var $popupOpen = $('.js-advert-info'),
+		$popup = $popupOpen.next();
+
+	$popupOpen.each(function () {
+		var $popupClose = $popup.find('.new-advert__obj-popup-close');
+
+		$(this).on('click', function (event) {
+			event.stopPropagation();
+			$popup.hide();
+			$(this).next().show();
+			$popupClose.on('click', function () {
+				$popup.hide();
+			});
+
+			$('html, body').on('click', function () {
+				$popup.hide();
+			});
+		});
+	});
+
+	// автозаполнение региона
+
 	var $searchInput = $('.js-input-search'),
 		searchDictionary = [];
 
