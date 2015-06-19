@@ -7,7 +7,7 @@ $(function () {
 	var $searchInput = $('.js-input-search'),
 		searchDictionary = [];
 
-	$.getJSON('../../data/regions.json', function (data) {
+	$.getJSON('../data/regions.json', function (data) {
 		searchDictionary = data.regions;
 
 		$searchInput.each(function () {
