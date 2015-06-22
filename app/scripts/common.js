@@ -7,16 +7,17 @@ $(function () {
 	// информационный попап
 
 	var $popupOpen = $('.js-advert-info'),
-		$popup = $popupOpen.next();
+		$popup = $popupOpen.find('.new-advert__obj-popup');
 
 	$popupOpen.each(function () {
-		var $popupClose = $popup.find('.new-advert__obj-popup-close');
+		var $popupClose = $(this).find('.new-advert__obj-popup-close');
 
 		$(this).on('click', function (event) {
 			event.stopPropagation();
 			$popup.hide();
-			$(this).next().show();
-			$popupClose.on('click', function () {
+			$(this).find('.new-advert__obj-popup').show();
+			$popupClose.on('click', function (event) {
+				event.stopPropagation();
 				$popup.hide();
 			});
 
@@ -63,13 +64,13 @@ $(function () {
 					$this.removeClass('input_regions');
 				}
 			});
-		})
+		});
 
 	});
 
 	// календарь
 
-	var $calendar = $('#calendar')
+	var $calendar = $('#calendar');
 
 	$calendar.datepicker({
 		dateFormat: 'd MM, yy',
@@ -80,10 +81,10 @@ $(function () {
 		prevText: '',
 		showAnim: 'slideDown',
 		beforeShow: function () {
-			$calendar.addClass('input_calendar')
+			$calendar.addClass('input_calendar');
 		},
 		onClose: function () {
-			$calendar.removeClass('input_calendar')
+			$calendar.removeClass('input_calendar');
 		}
 	});
 

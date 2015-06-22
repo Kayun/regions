@@ -77,11 +77,11 @@
 				margin 0
 
 		&-title
-		/.new-advert__obj-title
 			width 215px
 			display inline-block
 			color #fff
 			vertical-align top
+
 
 		&-input
 		/.new-advert__obj-input
@@ -276,12 +276,12 @@
 
 		&-info
 			position absolute
-			top 5px
+			top -2px
 			right -25px
-			width 20px
+			width 18px
 			height @width
 			color #fff
-			font-size 12px
+			font-size 11px
 			line-height @height
 			text-align center
 			border-radius 50%
@@ -291,20 +291,22 @@
 		&-popup
 			position absolute
 			z-index 100
-			top 40px
-			right -25px
+			top 30px
+			left -20px
 			padding 15px 30px 15px 15px
 			width 400px
+			font-size 14px
 			display none
 			color #8dc63f
 			background-color #fff
 			border-radius 7px
 			box-shadow 6px 8px 10px rgba(0, 0, 0, .5), 0 0 5px rgba(0,0,0,.5)
+			cursor default
 
 			&:before
 				position absolute
-				top -7px
-				right 2px
+				top -10px
+				left 18px
 				content ''
 				border-right ($w = 10px) solid $trn
 				border-left $w solid $trn
@@ -312,8 +314,9 @@
 
 		&-popup-close
 			position absolute
+			z-index 1
 			top 10px
-			right 5px
+			right 10px
 			width 16px
 			height @width
 			cursor pointer
@@ -333,6 +336,18 @@
 
 			&:after
 				transform rotate(-45deg)
+
+.new-advert__obj
+
+	&-title
+		width 215px
+		display inline-block
+		color #fff
+		vertical-align top
+
+	&-label
+		position relative
+		display inline-block
 
 
 
